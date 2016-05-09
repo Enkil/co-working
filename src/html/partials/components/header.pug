@@ -1,3 +1,30 @@
-//
-   Created by itimohin on 14.04.16.
+// Header
+include ../abstracts/mixins/_menu.pug
 
+header.b-header
+    .container
+        .row
+            // Logo
+            .column.-xs-2._d-flex._align-center
+                a(href="javascript:void(0)" title= "Co-Working \"Start\" • CREATE YOUR LIFE'S WORK").b-logo
+                    .logo
+                        img(src="../img/pics/logo.png")
+                    .sitename
+                        img(src="../svg/pics/sitename.svg")
+            // Navigation
+            .column.-xs-6._d-flex._align-center
+                nav.header-nav
+                    +menu('О нас','Новости','Анонсы','Услуги','Тарифы','Локации','Отзывы','Контакты')
+            // App icons
+            .column.-xs-1._d-flex._align-center._justify-center
+                .app-icons
+                    a(href="javascript:void(0)" title= "Скачать iOS-приложение").icon
+                        svg
+                            use(xlink:href="#apple")
+                    a(href="javascript:void(0)" title= "Скачать Android-приложение").icon
+                        svg
+                            use(xlink:href="#android")
+            // SigIn/User
+            .column.-xs-3._d-flex._align-center
+                .b-sigin
+                    a(href="javascript:void(0)" title= "Зарегистрироваться").btn Зарегистрироваться

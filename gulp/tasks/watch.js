@@ -10,7 +10,7 @@ const
 
 gulp.task('watch',['browser-sync'], (cb) => {
     gulp.watch(config.css.src, ['css','styleguide']);
-    gulp.watch(config.html.src + '/**/*.jade', ['html']);
+    gulp.watch(config.html.src + '/**/*.pug', ['html']);
     gulp.watch(config.js.src + '/**/*.js', ['js']);
     gulp.watch(config.images.src, ['img`']);
     gulp.watch(config.svg.src, ['svg']);

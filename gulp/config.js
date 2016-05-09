@@ -97,7 +97,7 @@ module.exports = {
     },
 
     svgSprite: {
-        src: _src + _svg + 'sprite/**/*.*',
+        src: _src + _svg + 'sprite/**/*.svg',
         dest: _dist + _svg + 'sprite/'
     },
 

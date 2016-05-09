@@ -1,7 +1,3 @@
-//- @pugdoc
-    name: Main template
-    description: template for pages
-
 doctype
 html(lang='ru', prefix='og: http://ogp.me/ns#')
 
@@ -17,4 +13,7 @@ html(lang='ru', prefix='og: http://ogp.me/ns#')
         include ../components/footer.pug
 
         .svg-sprite._hide
-            //include ../../../dist/svg/sprite/sprite.svg
+            include ../../../../dist/svg/sprite/sprite.svg
+
+    // Set JS
+    script(src="../js/app.js")

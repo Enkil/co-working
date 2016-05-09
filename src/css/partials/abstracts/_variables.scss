@@ -37,7 +37,7 @@ $container-max-widths: (
         sm:                   480px,
         md:                   768px,
         lg:                   992px,
-        xl:                   1280px,
+        xl:                   1440px,
         xxl:                  1890px
 ) !default;
 
@@ -64,18 +64,9 @@ $mq-breakpoints: (
   ======
 */
 
-$main-blue: #0086ff;
-$main-blue_hover: #31b1ff;
-$green: #00b05e;
-$green-2: #00b753;
-$black: #333;
-$grey: #f9f9f9;
-$grey-2: #ebebeb;
-$grey-3: #acacac;
-$grey-4: #808080;
-$grey-5: #e8e8e8;
-$grey-6: #919191;
-$grey-7: #828282;
-$grey-8: #b3b3b3;
-$grey-9: #f7f7f7;
-$red: #e74c3c;
+$darkgrey:    rgba(74,74,74,1);
+$white:       rgba(255,255,255,1);
+$orange:      rgba(254,165,66,1);
+$darkorange:  rgba(196,107,28,1);
+$blue:        rgba(20,150,213,1);
+$darkblue:    rgba(21,121,156,1);
