@@ -1,0 +1,35 @@
+.create-place{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.create-title{
+  font-size: 47px;
+  font-family: "Lato-Semibold";
+  color: #000;
+  margin: 0;
+  padding-left: 40px;
+  border-left: 4px solid #000;
+  letter-spacing: 2px;
+}
+
+.create-content{
+
+  .title{
+    font-family:"Lato-Light";
+    font-size: 30px;
+    color: $lightgray;
+    margin: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .text{
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 32px;
+    color: $lightgray;
+    margin: 0;
+  }
+}

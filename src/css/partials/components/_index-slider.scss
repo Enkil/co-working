@@ -8,7 +8,7 @@
     right: 0;
     margin: 0 auto;
     top: 20px;
-    max-width: 55%;
+    max-width: 60%;
 
     .startbtn{
       @include  transition();
@@ -33,6 +33,7 @@
       margin: 0;
       margin-bottom: 30px;
       font-family: "OpenSans-ExtraBold";
+      letter-spacing: 3px;
     }
 
     .list{
@@ -54,6 +55,7 @@
         color: $white;
         font-size: 25px;
         font-family:"Lato-Light";
+        letter-spacing: 1px;
       }
     }
   }
