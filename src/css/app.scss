@@ -5,7 +5,9 @@
   "partials/abstracts/variables",
   "vendor/normalize",
   "vendor/mq",
-  "../vendor/flex-sass-grid-generator/src/scss/flex-sass-grid-generator";
+  "../vendor/flex-sass-grid-generator/src/scss/flex-sass-grid-generator",
+  "./vendor/slick.scss";
+
 
 // Abstracts
 @import
@@ -23,4 +25,4 @@
 // Components
 @import
   "partials/components/header",
-  "partials/components/footer";
+  "partials/components/index-slider";

@@ -1,13 +1,11 @@
-const $ = require('jquery');
+window.$ = window.jQuery =  require('jquery');
+window.slick =              require('./vendor/bower/slick');
 
-$( document ).ready(function() {
+$(document).ready(function() {
 
-    // Add CSS file to head section
-    $.ajax({
-        url:"../css/app.css",
-        success:function(data){
-            $("<style></style>").appendTo("head").html(data);
-        }
+    $("#index-slider").slick({
+        dots: true,
+        fade: true
     });
 
 });

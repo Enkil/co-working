@@ -16,5 +16,7 @@
     "sass-mq": "~3.2.4",
     "flex-sass-grid-generator": "~0.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
+  }
 }

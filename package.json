@@ -45,7 +45,6 @@
     "imagemin-gifsicle": "^4.2.0",
     "imagemin-jpegoptim": "^4.1.0",
     "imagemin-pngquant": "^4.2.2",
-    "jQuery": "^1.7.4",
     "jquery": "^2.2.3",
     "lazypipe": "^1.0.1",
     "main-bower-files": "^2.11.1",
