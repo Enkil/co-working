@@ -7,47 +7,35 @@ SCSS variables are information about icon's compiled state, stored under its ori
 
 At the bottom of this section, we provide information about the spritesheet itself
 */
-$s-arrow-2: (
-  name: 's-arrow-2',
+$s-icon-all-info: (
+  name: 's-icon-all-info',
   x: 0px,
   y: 0px,
   offset-x: 0px,
   offset-y: 0px,
-  width: 600px,
-  height: 1053px,
-  total-width: 833px,
-  total-height: 1053px,
-  image: 'client/dist/img/sprite/png-sprite.png'
+  width: 16px,
+  height: 11px,
+  total-width: 33px,
+  total-height: 11px,
+  image: '../img/sprite/png-sprite.png'
 );
-$s-default-avatar: (
-  name: 's-default-avatar',
-  x: 601px,
+$s-icon-all-info-hover: (
+  name: 's-icon-all-info_hover',
+  x: 17px,
   y: 0px,
-  offset-x: -601px,
+  offset-x: -17px,
   offset-y: 0px,
-  width: 232px,
-  height: 232px,
-  total-width: 833px,
-  total-height: 1053px,
-  image: 'client/dist/img/sprite/png-sprite.png'
-);
-$s-flag: (
-  name: 's-flag',
-  x: 601px,
-  y: 233px,
-  offset-x: -601px,
-  offset-y: -233px,
-  width: 95px,
-  height: 104px,
-  total-width: 833px,
-  total-height: 1053px,
-  image: 'client/dist/img/sprite/png-sprite.png'
+  width: 16px,
+  height: 11px,
+  total-width: 33px,
+  total-height: 11px,
+  image: '../img/sprite/png-sprite.png'
 );
 $spritesheet: (
-  width: 833px,
-  height: 1053px,
-  image: 'client/dist/img/sprite/png-sprite.png',
-  sprites: ($s-arrow-2, $s-default-avatar, $s-flag, )
+  width: 33px,
+  height: 11px,
+  image: '../img/sprite/png-sprite.png',
+  sprites: ($s-icon-all-info, $s-icon-all-info-hover, )
 );
 
 /*

@@ -4,3 +4,126 @@
 @include font-face('Lato-Light', lato, light, 'Lato-Light');
 @include font-face('Lato-Semibold', lato, semibold, 'Lato-Semibold');
 @include font-face('OpenSans-ExtraBold', opensans, extrabold, 'OpenSans-ExtraBold-webfont');
+@include font-face('OpenSans-Light', opensans, light, 'OpenSans-Light-webfont');
+
+
+h2.h2-title{
+  font-size: 37px;
+  color: $black;
+  font-family: "Lato-Semibold";
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  &:before, &:after{
+    content: "";
+    width: 70px;
+    height: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: $black;
+  }
+  &:before{
+    margin-right: 40px;
+  }
+  &:after{
+    margin-left: 40px;
+  }
+}
+
+a.all-info{
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  height: 42px;
+  line-height: 38px;
+  font-size: 15px;
+  font-family: "Lato-Black";
+  color: $orange;
+  width: 30%;
+  border-top: 2px solid $orange;
+  border-bottom: 2px solid $orange;
+  text-decoration: none;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:before, &:after{
+    position: absolute;
+    top: -2px;
+    right: -20px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: '';
+    border-color: transparent transparent transparent $orange;
+    border-style: solid;
+    border-width: 21px 0 21px 20px;
+  }
+  &:after{
+    top: -1px;
+    right: -18px;
+    border-width: 20px 0 20px 19px;
+    border-color: transparent transparent transparent $white;
+  }
+  &:hover:before, &:hover:after{
+    border-color: transparent transparent transparent $orange;
+  }
+  &:active:before, &:active:after{
+    border-color: transparent transparent transparent $darkorange;
+  }
+
+  &:hover{
+    background-color: $orange;
+    color: $white;
+
+    span.icon{
+      @include sprite($s-icon-all-info_hover);
+    }
+  }
+  &:active{
+    background-color: $darkorange;
+    color: $white;
+    border-top: 2px solid $darkorange;
+    border-bottom: 2px solid $darkorange;
+  }
+
+  span.text{
+    width: 100%;
+    display: inline-block;
+
+    &:before, &:after{
+      position: absolute;
+      top: -2px;
+      left: -20px;
+      display: block;
+      width: 0;
+      height: 0;
+      content: '';
+      border-color: transparent $orange transparent transparent;
+      border-style: solid;
+      border-width: 21px 20px 21px 0;
+    }
+    &:after{
+      top: -1px;
+      left: -18px;
+      border-width: 20px 19px 20px 0;
+      border-color: transparent $white transparent transparent;
+    }
+    &:hover:before, &:hover:after{
+      border-color: transparent $orange transparent transparent;
+    }
+    &:active:before, &:active:after{
+      border-color: transparent $darkorange transparent transparent;
+    }
+  }
+
+  span.icon{
+    @include sprite($s-icon-all-info);
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 20%;
+  }
+}
