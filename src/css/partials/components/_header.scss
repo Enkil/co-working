@@ -1,7 +1,15 @@
+body{
+  padding-top: 83px;
+}
 header.b-header{
   background-color: $darkgrey;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 a.b-logo{
