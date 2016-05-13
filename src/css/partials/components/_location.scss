@@ -1,0 +1,121 @@
+.location-block{
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover .pop-up{
+    bottom: 0;
+    opacity: 1;
+  }
+  &:hover .name, &:hover .logo{
+    display: none;
+  }
+
+  &.-orange .overlay{  background-color: $orange;  }
+  &.-blue .overlay{  background-color: $blue;  }
+  &.-green .overlay{  background-color: $green;  }
+
+  &.-orange .opening{  background-color: $orange;  }
+  &.-blue .opening{  background-color: $blue;  }
+  &.-green .opening{  background-color: $green;  }
+
+  .overlay{
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .name{
+    font-size: 48px;
+    color: $white;
+    font-family: "Lato-Medium";
+    margin: 0;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  .img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  .logo{
+    @include sprite($s-logo-min);
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .pop-up{
+    @include transition();
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 40px);
+    bottom: -150%;
+    opacity: 0;
+    text-align: center;
+
+    .workplaces{
+      color: $white;
+      width: 60%;
+      border: 2px solid $white;
+      padding: 10px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      text-align: left;
+    }
+    .num{
+      color: $white;
+      font-family: "Lato-Regular";
+      font-size: 60px;
+      letter-spacing: 3;
+    }
+    .places{
+      color: $white;
+      font-family: "Lato-Bold";
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+    .address{
+      color: $white;
+      font-family: "Lato-Medium";
+      font-size: 15px;
+      margin-top: 40px;
+      letter-spacing: 2px;
+    }
+    .opening{
+      color: $white;
+      font-family: "Lato-Black";
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-top: 40px;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      letter-spacing: 2px;
+    }
+  }
+}

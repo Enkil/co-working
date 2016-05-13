@@ -10,56 +10,68 @@ At the bottom of this section, we provide information about the spritesheet itse
 $s-icon-all-info: (
   name: 's-icon-all-info',
   x: 0px,
-  y: 20px,
+  y: 51px,
   offset-x: 0px,
-  offset-y: -20px,
+  offset-y: -51px,
   width: 16px,
   height: 11px,
-  total-width: 46px,
-  total-height: 31px,
+  total-width: 70px,
+  total-height: 62px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-icon-all-info-hover: (
   name: 's-icon-all-info_hover',
   x: 17px,
-  y: 20px,
+  y: 51px,
   offset-x: -17px,
-  offset-y: -20px,
+  offset-y: -51px,
   width: 16px,
   height: 11px,
-  total-width: 46px,
-  total-height: 31px,
+  total-width: 70px,
+  total-height: 62px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-icon-bq-left: (
   name: 's-icon-bq-left',
-  x: 24px,
-  y: 0px,
-  offset-x: -24px,
-  offset-y: 0px,
+  x: 47px,
+  y: 20px,
+  offset-x: -47px,
+  offset-y: -20px,
   width: 22px,
   height: 19px,
-  total-width: 46px,
-  total-height: 31px,
+  total-width: 70px,
+  total-height: 62px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-icon-bq-right: (
   name: 's-icon-bq-right',
+  x: 47px,
+  y: 0px,
+  offset-x: -47px,
+  offset-y: 0px,
+  width: 23px,
+  height: 19px,
+  total-width: 70px,
+  total-height: 62px,
+  image: '../img/sprite/png-sprite.png'
+);
+$s-logo-min: (
+  name: 's-logo-min',
   x: 0px,
   y: 0px,
   offset-x: 0px,
   offset-y: 0px,
-  width: 23px,
-  height: 19px,
-  total-width: 46px,
-  total-height: 31px,
+  width: 46px,
+  height: 50px,
+  total-width: 70px,
+  total-height: 62px,
   image: '../img/sprite/png-sprite.png'
 );
 $spritesheet: (
-  width: 46px,
-  height: 31px,
+  width: 70px,
+  height: 62px,
   image: '../img/sprite/png-sprite.png',
-  sprites: ($s-icon-all-info, $s-icon-all-info-hover, $s-icon-bq-left, $s-icon-bq-right, )
+  sprites: ($s-icon-all-info, $s-icon-all-info-hover, $s-icon-bq-left, $s-icon-bq-right, $s-logo-min, )
 );
 
 /*
