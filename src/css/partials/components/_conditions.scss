@@ -1,0 +1,31 @@
+.conditions-list{
+  margin-bottom: 40px;
+}
+
+.condition-block{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 10%;
+
+  .img{
+    display: block;
+    width: 81px;
+    height: 91px;
+
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  .title{
+    font-size: 14px;
+    font-family: "OpenSans-Bold";
+    color: $orange;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+  }
+}

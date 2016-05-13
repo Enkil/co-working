@@ -81,8 +81,9 @@ module.exports = {
     },
     
     pngSprite:{
-        src: _src + _img + 'sprite/**/*.*',
-        dest: "../" + _img + 'sprite/',
+        src: _src + _img + 'sprite/**/*.png',
+        dest: _dist + _img + 'sprite/',
+        destToSprite: "../" + _img + 'sprite/',
         destCSS: _src + _css + 'partials/abstracts/'
     },
     

@@ -23,7 +23,6 @@ gulp.task('svg-sprite', () => {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
         }))
-        .pipe(gulpif(devBuild, changed(config.dest)))
         .pipe(svgmin())
         .pipe(svgstore())
         .pipe(cheerio({

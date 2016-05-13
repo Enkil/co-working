@@ -6,6 +6,13 @@
 article.article-preview{
   cursor: pointer;
 
+  &:hover{
+    .text{  color: $blue;}
+  }
+  &:active{
+    .text{  color: $darkblue;}
+  }
+
   figure{
     margin: 0;
   }
