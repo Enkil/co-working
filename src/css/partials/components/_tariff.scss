@@ -1,0 +1,104 @@
+.tariff-item{
+
+  .img{
+    width: 100%;
+    height: 320px;
+    img{
+      width: 100%;
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .name{
+    font-family: "OpenSans-Bold";
+    font-size: 26px;
+    color: $black;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+
+  .desc{
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    color: $grey;
+    margin: 0;
+  }
+
+  .price-block{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .price{
+      display: flex;
+      flex-direction: column;
+      font-family: "OpenSans-Light";
+      font-size: 43px;
+      color: $grey;
+      line-height: 1;
+      span{
+        width: 100%;
+      }
+    }
+    .buy{
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+      height: 56px;
+      font-size: 15px;
+      font-family: "Lato-Bold";
+      color: $white;
+      width: 30%;
+      border-top: 2px solid $orange;
+      border-bottom: 2px solid $orange;
+      background-color: $orange;
+      text-decoration: none;
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+
+      &:before, &:after{
+        position: absolute;
+        top: -2px;
+        right: -20px;
+        display: block;
+        width: 0;
+        height: 0;
+        content: '';
+        border-color: transparent transparent transparent $orange;
+        border-style: solid;
+        border-width: 28px 0 28px 20px;
+      }
+      &:after{
+        left: -20px;
+        border-width: 28px 20px 28px 0;
+        border-color: transparent $orange transparent transparent;
+      }
+      &:hover:before{  border-color: transparent transparent transparent $blue;  }
+      &:hover:after{  border-color: transparent $blue transparent transparent;}
+      &:active:before{  border-color: transparent transparent transparent $darkblue;  }
+      &:active:after{ border-color: transparent $darkblue transparent transparent;}
+
+      &:hover{
+        background-color: $blue;
+        color: $white;
+        border-top: 2px solid $blue;
+        border-bottom: 2px solid $blue;
+        background-color: $blue;
+      }
+      &:active{
+        background-color: $darkblue;
+        color: $white;
+        border-top: 2px solid $darkblue;
+        border-bottom: 2px solid $darkblue;
+      }
+    }
+  }
+}
