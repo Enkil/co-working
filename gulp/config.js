@@ -44,7 +44,8 @@ module.exports = {
         src: _src + _html,
         dest: _dist + _html,
         params: {
-            pretty: devBuild
+            pretty: true
+            // pretty: devBuild
             // locals: {
             //     pkgVersion: pkg.version,
             //     pkgHomepage: pkg.homepage

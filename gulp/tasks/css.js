@@ -28,13 +28,7 @@ const
     reload =        browserSync.reload,
 
     cssProdBuild = lazypipe()
-        .pipe(rename,{ suffix: '.min' })
-        .pipe(minifycss)
-        .pipe(gulp.dest,configCSS.dest)
-        .pipe(rename,{ basename: 'app', suffix: '.purify' })
         .pipe(purify,[configHTML.dest + '**/*.html', configJS.dest + '**/*.js'])
-        .pipe(gulp.dest,configCSS.dest)
-        .pipe(rename,{ suffix: '.min' })
         .pipe(minifycss);
 
 gulp.task('css', () => {
