@@ -7,13 +7,6 @@ include ../abstracts/mixins/_menu.pug
         +menu('Коворкинг','Пространство','Услуги')
 
     .index-slider#index-slider
-        .slide
-            img(src="../img/pics/main-slider-slide.png")
-        .slide
-            img(src="../img/pics/main-slider-slide.png")
-        .slide
-            img(src="../img/pics/main-slider-slide.png")
-        .slide
-            img(src="../img/pics/main-slider-slide.png")
-        .slide
-            img(src="../img/pics/main-slider-slide.png")
+        - for (i=0; i<6; i++)
+            .slide
+                img(src="../img/pics/main-slider-slide.png")

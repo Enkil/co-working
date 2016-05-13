@@ -27,5 +27,14 @@ $(document).ready(function() {
         infoWindow: {
             content: '<p>HTML Content</p>'
         }
-    })
+    });
+
+    $("#partner-slider").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
 });

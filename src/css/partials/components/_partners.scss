@@ -1,0 +1,38 @@
+.partners-list{
+  margin-bottom: 40px;
+}
+
+.partner-slider{
+
+  .slick-arrow{
+    @include transition();
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $lightergrey;
+    border: none;
+    font-size: 0;
+    position: absolute;
+    top: 35%;
+    z-index: 50;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 9px 12px;
+    outline: none;
+    &:hover{
+      background-color: $orange;
+    }
+    &:active{
+      background-color: $darkorange;
+    }
+  }
+
+  .slick-prev{
+    left: 0;
+    background-image: url("../img/pics/slider-arrow.png");
+  }
+  .slick-next{
+    right: 0;
+    background-image: url("../img/pics/slider-arrow_next.png");
+  }
+}
