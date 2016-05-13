@@ -1,5 +1,7 @@
 window.$ = window.jQuery =  require('jquery');
 window.slick =              require('./vendor/bower/slick');
+window.styler =             require('jquery.formstyler');
+window.gmaps =              require('gmaps');
 
 $(document).ready(function() {
 
@@ -8,4 +10,22 @@ $(document).ready(function() {
         fade: true
     });
 
+    $('select.js-select').styler();
+    $('input.js-input-checkbox').styler();
+
+    var map = new gmaps({
+        el: '#index-map',
+        lat: -12.043333,
+        lng: -77.028333,
+        scrollwheel: false
+    });
+
+    map.addMarker({
+        lat: -12.043333,
+        lng: -77.028333,
+        title: 'Lima',
+        infoWindow: {
+            content: '<p>HTML Content</p>'
+        }
+    })
 });

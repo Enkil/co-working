@@ -14,7 +14,8 @@
   ],
   "devDependencies": {
     "sass-mq": "~3.2.4",
-    "flex-sass-grid-generator": "~0.8.0"
+    "flex-sass-grid-generator": "~0.8.0",
+    "jquery-form-styler": "jquery.form-styler#^1.7.4"
   },
   "dependencies": {
     "slick-carousel": "^1.6.0"

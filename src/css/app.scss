@@ -6,7 +6,8 @@
   "vendor/normalize",
   "vendor/mq",
   "../vendor/flex-sass-grid-generator/src/scss/flex-sass-grid-generator",
-  "./vendor/slick.scss";
+  "./vendor/slick.scss",
+  "./vendor/jquery.formstyler";
 
 
 // Abstracts
@@ -28,4 +29,6 @@
   "partials/components/index-slider",
   "partials/components/create-your-place",
   "partials/components/index-news",
-  "partials/components/conditions";
+  "partials/components/conditions",
+  "partials/components/contacts",
+  "partials/components/why-we-love";
