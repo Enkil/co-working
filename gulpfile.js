@@ -7,7 +7,7 @@ const
 gulp.task('list', taskListing);
 
 // Set Env
-process.env.NODE_ENV = 'production';
+process.env.NODE_ENV = 'development';
 
 // Check ENV
 global.devBuild = process.env.NODE_ENV !== 'production';

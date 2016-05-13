@@ -19,7 +19,7 @@ const
 module.exports = {
 
     gitRepository: {
-        remoteUrl: "git@github.com:Enkil/front-kit.git"
+        remoteUrl: "git@github.com:Enkil/co-working.git"
     },
     
     paths: {
