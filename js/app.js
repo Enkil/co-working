@@ -13372,6 +13372,11 @@ $(document).ready(function() {
             }
         });
     });
+    
+    $('.js-article-preview').click(function () {
+        var _this = $(this);
+        $('.js-article-text').toggleClass("_hide")
+    })
 
 });
 },{"./vendor/bower/slick":5,"gmaps":1,"jquery":3,"jquery.formstyler":2}],5:[function(require,module,exports){
