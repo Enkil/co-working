@@ -1693,7 +1693,7 @@ body {
 
 header.b-header {
   position: fixed;
-  z-index: 100;
+  z-index: 500;
   top: 0;
   left: 0;
   width: 100%;
@@ -2367,7 +2367,7 @@ article.article-preview .date-wrap .month {
   height: 19px;
   content: '';
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -47px -20px;
+  background-position: -47px -31px;
 }
 
 .review-block .text:after {
@@ -2376,7 +2376,7 @@ article.article-preview .date-wrap .month {
   height: 19px;
   content: '';
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -47px 0;
+  background-position: -77px -30px;
 }
 
 .partners-list {
@@ -2492,7 +2492,7 @@ article.article-preview .date-wrap .month {
   display: flex;
   box-sizing: border-box;
   width: 30%;
-  height: 56px;
+  height: 55px;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -2715,6 +2715,395 @@ article.article-preview .date-wrap .month {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
+}
+
+section.test-drive {
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: rgba(216,216,216,.11);
+}
+
+section.test-drive a.social-loginbtn {
+  font-family: 'Lato-Bold';
+  font-size: 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  width: 50%;
+  height: 55px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-top: 2px solid #1496d5;
+  border-bottom: 2px solid #1496d5;
+  background-color: #1496d5;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+section.test-drive a.social-loginbtn:before,section.test-drive a.social-loginbtn:after {
+  position: absolute;
+  top: -2px;
+  right: -20px;
+  display: block;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 28px 0 28px 20px;
+  border-style: solid;
+  border-color: transparent transparent transparent #1496d5;
+}
+
+section.test-drive a.social-loginbtn:after {
+  left: -20px;
+  border-width: 28px 20px 28px 0;
+  border-color: transparent #1496d5 transparent transparent;
+}
+
+section.test-drive a.social-loginbtn:hover:before {
+  border-color: transparent transparent transparent #2db1f1;
+}
+
+section.test-drive a.social-loginbtn:hover:after {
+  border-color: transparent #2db1f1 transparent transparent;
+}
+
+section.test-drive a.social-loginbtn:active:before {
+  border-color: transparent transparent transparent #15799c;
+}
+
+section.test-drive a.social-loginbtn:active:after {
+  border-color: transparent #15799c transparent transparent;
+}
+
+section.test-drive a.social-loginbtn:hover {
+  color: #fff;
+  border-top: 2px solid #2db1f1;
+  border-bottom: 2px solid #2db1f1;
+  background-color: #2db1f1;
+  background-color: #2db1f1;
+}
+
+section.test-drive a.social-loginbtn:active {
+  color: #fff;
+  border-top: 2px solid #15799c;
+  border-bottom: 2px solid #15799c;
+  background-color: #15799c;
+}
+
+section.test-drive a.social-loginbtn .fb,section.test-drive a.social-loginbtn .vk {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+section.test-drive a.social-loginbtn .fb {
+  width: 29px;
+  height: 29px;
+  margin-left: 20px;
+  background-image: url('../img/sprite/png-sprite.png');
+  background-position: -77px 0;
+}
+
+section.test-drive a.social-loginbtn .vk {
+  width: 29px;
+  height: 30px;
+  background-image: url('../img/sprite/png-sprite.png');
+  background-position: -47px 0;
+}
+
+form.testdrive-form {
+  margin-bottom: 40px;
+}
+
+form.testdrive-form .checkbox span {
+  font-family: Arial;
+  font-size: 11px;
+  line-height: 40px;
+  height: 100%;
+  cursor: pointer;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+form.testdrive-form .checkbox .jq-checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 10px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+
+form.testdrive-form .checkbox .jq-checkbox:hover {
+  border: 1px solid #fea542;
+}
+
+form.testdrive-form .checkbox .jq-checkbox.checked .jq-checkbox__div {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  background: none;
+  background-image: url('../img/pics/checbox-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15px 11px;
+  box-shadow: none;
+}
+
+form.testdrive-form label.label {
+  font-family: Arial;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+form.testdrive-form label.label span {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form.testdrive-form label.label.-error {
+  color: #d0021b;
+}
+
+form.testdrive-form label.label.-error input.input {
+  background-color: #f3e9eb;
+}
+
+form.testdrive-form input.input {
+  font-family: 'Lato-Semibold';
+  font-size: 22px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 55px;
+  padding: 5px 10px;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  background-color: #e9f0f3;
+}
+
+form.testdrive-form a.signin {
+  font-family: 'Lato-Bold';
+  font-size: 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  width: 20%;
+  height: 55px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-top: 2px solid #fea542;
+  border-bottom: 2px solid #fea542;
+  background-color: #fea542;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+form.testdrive-form a.signin:before,form.testdrive-form a.signin:after {
+  position: absolute;
+  top: -2px;
+  right: -20px;
+  display: block;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 28px 0 28px 20px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fea542;
+}
+
+form.testdrive-form a.signin:after {
+  left: -20px;
+  border-width: 28px 20px 28px 0;
+  border-color: transparent #fea542 transparent transparent;
+}
+
+form.testdrive-form a.signin:hover:before {
+  border-color: transparent transparent transparent #1496d5;
+}
+
+form.testdrive-form a.signin:hover:after {
+  border-color: transparent #1496d5 transparent transparent;
+}
+
+form.testdrive-form a.signin:active:before {
+  border-color: transparent transparent transparent #15799c;
+}
+
+form.testdrive-form a.signin:active:after {
+  border-color: transparent #15799c transparent transparent;
+}
+
+form.testdrive-form a.signin:hover {
+  color: #fff;
+  border-top: 2px solid #1496d5;
+  border-bottom: 2px solid #1496d5;
+  background-color: #1496d5;
+  background-color: #1496d5;
+}
+
+form.testdrive-form a.signin:active {
+  color: #fff;
+  border-top: 2px solid #15799c;
+  border-bottom: 2px solid #15799c;
+  background-color: #15799c;
+}
+
+form.testdrive-form h3.additional {
+  font-family: Arial;
+  font-size: 15px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #a7b3b2;
+}
+
+form.testdrive-form .img-upload .photo {
+  font-family: Arial;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+form.testdrive-form .img-upload .uploadbtn {
+  font-family: 'Lato-Black';
+  font-size: 8px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  width: 50%;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fea542;
+  border-top: 2px solid #fea542;
+  border-bottom: 2px solid #fea542;
+  background-color: #fff;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+form.testdrive-form .img-upload .uploadbtn:before,form.testdrive-form .img-upload .uploadbtn:after {
+  position: absolute;
+  top: -2px;
+  right: -20px;
+  display: block;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 15px 0 15px 20px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fea542;
+}
+
+form.testdrive-form .img-upload .uploadbtn:after {
+  top: -1px;
+  right: -18px;
+  border-width: 15px 0 15px 19px;
+  border-color: transparent transparent transparent #fff;
+}
+
+form.testdrive-form .img-upload .uploadbtn:hover:before,form.testdrive-form .img-upload .uploadbtn:hover:after {
+  border-color: transparent transparent transparent #fea542;
+}
+
+form.testdrive-form .img-upload .uploadbtn:active:before,form.testdrive-form .img-upload .uploadbtn:active:after {
+  border-color: transparent transparent transparent #c46b1c;
+}
+
+form.testdrive-form .img-upload .uploadbtn:hover {
+  color: #fff;
+  background-color: #fea542;
+}
+
+form.testdrive-form .img-upload .uploadbtn:active {
+  color: #fff;
+  border-top: 2px solid #c46b1c;
+  border-bottom: 2px solid #c46b1c;
+  background-color: #c46b1c;
+}
+
+form.testdrive-form .img-upload .uploadbtn span {
+  display: inline-block;
+  width: 100%;
+}
+
+form.testdrive-form .img-upload .uploadbtn span:before,form.testdrive-form .img-upload .uploadbtn span:after {
+  position: absolute;
+  top: -2px;
+  left: -20px;
+  display: block;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 15px 20px 15px 0;
+  border-style: solid;
+  border-color: transparent #fea542 transparent transparent;
+}
+
+form.testdrive-form .img-upload .uploadbtn span:after {
+  top: -1px;
+  left: -18px;
+  border-width: 15px 19px 15px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+form.testdrive-form .img-upload .uploadbtn span:hover:before,form.testdrive-form .img-upload .uploadbtn span:hover:after {
+  border-color: transparent #fea542 transparent transparent;
+}
+
+form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-form .img-upload .uploadbtn span:active:after {
+  border-color: transparent #c46b1c transparent transparent;
 }
 
 @font-face {

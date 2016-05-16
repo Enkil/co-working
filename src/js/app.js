@@ -2,6 +2,7 @@ window.$ = window.jQuery =  require('jquery');
 window.slick =              require('./vendor/bower/slick');
 window.styler =             require('jquery.formstyler');
 window.gmaps =              require('gmaps');
+window.inputmask =              require('jquery.inputmask');
 
 $(document).ready(function() {
 
@@ -56,6 +57,8 @@ $(document).ready(function() {
     $('.js-article-preview').click(function () {
         var _this = $(this);
         $('.js-article-text').toggleClass("_hide")
-    })
+    });
+
+    $('.js-input-tel').inputmask({"mask": "(9) (999) 999-9999", greedy: false});
 
 });

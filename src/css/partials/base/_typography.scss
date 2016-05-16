@@ -89,20 +89,13 @@ a.all-info{
     border-width: 20px 0 20px 19px;
     border-color: transparent transparent transparent $white;
   }
-  &:hover:before, &:hover:after{
-    border-color: transparent transparent transparent $orange;
-  }
-  &:active:before, &:active:after{
-    border-color: transparent transparent transparent $darkorange;
-  }
+  &:hover:before, &:hover:after{  border-color: transparent transparent transparent $orange;  }
+  &:active:before, &:active:after{  border-color: transparent transparent transparent $darkorange;  }
 
   &:hover{
     background-color: $orange;
     color: $white;
-
-    span.icon{
-      @include sprite($s-icon-all-info_hover);
-    }
+    span.icon{  @include sprite($s-icon-all-info_hover);  }
   }
   &:active{
     background-color: $darkorange;

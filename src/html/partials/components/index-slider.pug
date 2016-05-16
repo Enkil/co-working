@@ -4,7 +4,7 @@ include ../abstracts/mixins/_menu.pug
     .content-block
         a(href='#contacts' title="На старт").startbtn
         p.slogan CREATE YOUR LIFE'S WORK
-        +menu('Коворкинг','Пространство','Услуги')
+        +menu({coworking:'Коворкинг',place:'Пространство',services:'Услуги'})
 
     .index-slider#index-slider
         - for (i=0; i<6; i++)

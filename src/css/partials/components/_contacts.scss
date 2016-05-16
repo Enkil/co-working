@@ -6,12 +6,8 @@
     text-align: center;
     height: 40px;
     &:hover{
-      .jq-selectbox__select-text{
-        color: $orange;}
-    }
-    &.opened .jq-selectbox__select{
-      border-bottom: none;
-    }
+      .jq-selectbox__select-text{  color: $orange;} }
+    &.opened .jq-selectbox__select{  border-bottom: none;  }
   }
   .jq-selectbox.focused .jq-selectbox__select{
     border: 1px solid $black;

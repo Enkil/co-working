@@ -1,0 +1,318 @@
+section.test-drive{
+  background-color: $morelightergrey;
+  padding-top: 20px;
+  margin-top: 40px;
+
+  a.social-loginbtn{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    height: 55px;
+    font-size: 15px;
+    font-family: "Lato-Bold";
+    color: $white;
+    width: 50%;
+    border-top: 2px solid $blue;
+    border-bottom: 2px solid $blue;
+    background-color: $blue;
+    text-decoration: none;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &:before, &:after{
+      position: absolute;
+      top: -2px;
+      right: -20px;
+      display: block;
+      width: 0;
+      height: 0;
+      content: '';
+      border-color: transparent transparent transparent $blue;
+      border-style: solid;
+      border-width: 28px 0 28px 20px;
+    }
+    &:after{
+      left: -20px;
+      border-width: 28px 20px 28px 0;
+      border-color: transparent $blue transparent transparent;
+    }
+    &:hover:before{  border-color: transparent transparent transparent $lightblue2;  }
+    &:hover:after{  border-color: transparent $lightblue2 transparent transparent;}
+    &:active:before{  border-color: transparent transparent transparent $darkblue;  }
+    &:active:after{ border-color: transparent $darkblue transparent transparent;}
+
+    &:hover{
+      background-color: $lightblue2;
+      color: $white;
+      border-top: 2px solid $lightblue2;
+      border-bottom: 2px solid $lightblue2;
+      background-color: $lightblue2;
+    }
+    &:active{
+      background-color: $darkblue;
+      color: $white;
+      border-top: 2px solid $darkblue;
+      border-bottom: 2px solid $darkblue;
+    }
+
+    .fb, .vk{
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+    }
+    .fb{
+      @include sprite($s-icon-fb);
+      margin-left: 20px;
+    }
+    .vk{
+      @include sprite($s-icon-vk);
+    }
+  }
+}
+
+form.testdrive-form{
+  margin-bottom: 40px;
+
+  .checkbox span{
+    height: 100%;
+    line-height: 40px;
+    font-family: Arial;
+    font-size: 11px;
+    color: $black;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .checkbox .jq-checkbox{
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    margin-right: 10px;
+    border: 1px solid $lightergrey;
+    background: $white;
+    &:hover{
+      border: 1px solid $orange;
+    }
+  }
+  .checkbox .jq-checkbox.checked .jq-checkbox__div{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    background-image: url("../img/pics/checbox-arrow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 15px 11px;
+  }
+
+
+  label.label{
+    width: 100%;
+    font-family: Arial;
+    font-size: 15px;
+    color: $black;
+    display: block;
+    margin-bottom: 20px;
+    span{
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    &.-error{
+      color: $red;
+
+      input.input{
+        background-color: $lightred;
+      }
+    }
+  }
+
+  input.input{
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    height: 55px;
+    background-color: $lightblue;
+    border: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-family: "Lato-Semibold";
+    font-size: 22px;
+    color: $black;
+  }
+
+  a.signin{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    height: 55px;
+    font-size: 15px;
+    font-family: "Lato-Bold";
+    color: $white;
+    width: 20%;
+    border-top: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+    background-color: $orange;
+    text-decoration: none;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &:before, &:after{
+      position: absolute;
+      top: -2px;
+      right: -20px;
+      display: block;
+      width: 0;
+      height: 0;
+      content: '';
+      border-color: transparent transparent transparent $orange;
+      border-style: solid;
+      border-width: 28px 0 28px 20px;
+    }
+    &:after{
+      left: -20px;
+      border-width: 28px 20px 28px 0;
+      border-color: transparent $orange transparent transparent;
+    }
+    &:hover:before{  border-color: transparent transparent transparent $blue;  }
+    &:hover:after{  border-color: transparent $blue transparent transparent;}
+    &:active:before{  border-color: transparent transparent transparent $darkblue;  }
+    &:active:after{ border-color: transparent $darkblue transparent transparent;}
+
+    &:hover{
+      background-color: $blue;
+      color: $white;
+      border-top: 2px solid $blue;
+      border-bottom: 2px solid $blue;
+      background-color: $blue;
+    }
+    &:active{
+      background-color: $darkblue;
+      color: $white;
+      border-top: 2px solid $darkblue;
+      border-bottom: 2px solid $darkblue;
+    }
+  }
+
+  h3.additional{
+    font-family: Arial;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    color: $lightgray;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .img-upload{
+
+    .upload{
+
+    }
+    .photo{
+      width: 100%;
+      font-family: Arial;
+      font-size: 15px;
+      color: $black;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .uploadbtn{
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+      height: 30px;
+      font-size: 8px;
+      font-family: "Lato-Black";
+      color: $orange;
+      width: 50%;
+      border-top: 2px solid $orange;
+      border-bottom: 2px solid $orange;
+      background-color: $white;
+      text-decoration: none;
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+
+      &:before, &:after{
+        position: absolute;
+        top: -2px;
+        right: -20px;
+        display: block;
+        width: 0;
+        height: 0;
+        content: '';
+        border-color: transparent transparent transparent $orange;
+        border-style: solid;
+        border-width: 15px 0 15px 20px;
+      }
+      &:after{
+        top: -1px;
+        right: -18px;
+        border-width: 15px 0 15px 19px;
+        border-color: transparent transparent transparent $white;
+      }
+      &:hover:before, &:hover:after{  border-color: transparent transparent transparent $orange;  }
+      &:active:before, &:active:after{  border-color: transparent transparent transparent $darkorange;  }
+
+      &:hover{
+        background-color: $orange;
+        color: $white;
+      }
+      &:active{
+        background-color: $darkorange;
+        color: $white;
+        border-top: 2px solid $darkorange;
+        border-bottom: 2px solid $darkorange;
+      }
+
+      span {
+        width: 100%;
+        display: inline-block;
+
+        &:before, &:after {
+          position: absolute;
+          top: -2px;
+          left: -20px;
+          display: block;
+          width: 0;
+          height: 0;
+          content: '';
+          border-color: transparent $orange transparent transparent;
+          border-style: solid;
+          border-width: 15px 20px 15px 0;
+        }
+        &:after {
+          top: -1px;
+          left: -18px;
+          border-width: 15px 19px 15px 0;
+          border-color: transparent $white transparent transparent;
+        }
+        &:hover:before, &:hover:after {
+          border-color: transparent $orange transparent transparent;
+        }
+        &:active:before, &:active:after {
+          border-color: transparent $darkorange transparent transparent;
+        }
+      }
+    }
+  }
+}

@@ -15,7 +15,7 @@ $s-icon-all-info: (
   offset-y: -51px,
   width: 16px,
   height: 11px,
-  total-width: 70px,
+  total-width: 106px,
   total-height: 62px,
   image: '../img/sprite/png-sprite.png'
 );
@@ -27,31 +27,55 @@ $s-icon-all-info-hover: (
   offset-y: -51px,
   width: 16px,
   height: 11px,
-  total-width: 70px,
+  total-width: 106px,
   total-height: 62px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-icon-bq-left: (
   name: 's-icon-bq-left',
   x: 47px,
-  y: 20px,
+  y: 31px,
   offset-x: -47px,
-  offset-y: -20px,
+  offset-y: -31px,
   width: 22px,
   height: 19px,
-  total-width: 70px,
+  total-width: 106px,
   total-height: 62px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-icon-bq-right: (
   name: 's-icon-bq-right',
+  x: 77px,
+  y: 30px,
+  offset-x: -77px,
+  offset-y: -30px,
+  width: 23px,
+  height: 19px,
+  total-width: 106px,
+  total-height: 62px,
+  image: '../img/sprite/png-sprite.png'
+);
+$s-icon-fb: (
+  name: 's-icon-fb',
+  x: 77px,
+  y: 0px,
+  offset-x: -77px,
+  offset-y: 0px,
+  width: 29px,
+  height: 29px,
+  total-width: 106px,
+  total-height: 62px,
+  image: '../img/sprite/png-sprite.png'
+);
+$s-icon-vk: (
+  name: 's-icon-vk',
   x: 47px,
   y: 0px,
   offset-x: -47px,
   offset-y: 0px,
-  width: 23px,
-  height: 19px,
-  total-width: 70px,
+  width: 29px,
+  height: 30px,
+  total-width: 106px,
   total-height: 62px,
   image: '../img/sprite/png-sprite.png'
 );
@@ -63,15 +87,15 @@ $s-logo-min: (
   offset-y: 0px,
   width: 46px,
   height: 50px,
-  total-width: 70px,
+  total-width: 106px,
   total-height: 62px,
   image: '../img/sprite/png-sprite.png'
 );
 $spritesheet: (
-  width: 70px,
+  width: 106px,
   height: 62px,
   image: '../img/sprite/png-sprite.png',
-  sprites: ($s-icon-all-info, $s-icon-all-info-hover, $s-icon-bq-left, $s-icon-bq-right, $s-logo-min, )
+  sprites: ($s-icon-all-info, $s-icon-all-info-hover, $s-icon-bq-left, $s-icon-bq-right, $s-icon-fb, $s-icon-vk, $s-logo-min, )
 );
 
 /*
