@@ -2742,7 +2742,6 @@ section.test-drive .subtitle {
 
 section.test-drive a.social-loginbtn {
   font-family: 'Lato-Bold';
-  font-size: 15px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2754,6 +2753,7 @@ section.test-drive a.social-loginbtn {
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
+  padding: 15px 0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -2842,6 +2842,10 @@ section.test-drive a.social-loginbtn .vk {
   background-position: -47px 0;
 }
 
+section.test-drive a.social-loginbtn span {
+  word-break: inherit;
+}
+
 form.testdrive-form {
   margin-bottom: 40px;
 }
@@ -2919,7 +2923,7 @@ form.testdrive-form input.input {
   background-color: #e9f0f3;
 }
 
-form.testdrive-form a.signin {
+form.testdrive-form .signin {
   font-family: 'Lato-Bold';
   font-size: 15px;
   position: relative;
@@ -2950,7 +2954,7 @@ form.testdrive-form a.signin {
   justify-content: center;
 }
 
-form.testdrive-form a.signin:before,form.testdrive-form a.signin:after {
+form.testdrive-form .signin:before,form.testdrive-form .signin:after {
   position: absolute;
   top: -2px;
   right: -20px;
@@ -2963,29 +2967,29 @@ form.testdrive-form a.signin:before,form.testdrive-form a.signin:after {
   border-color: transparent transparent transparent #fea542;
 }
 
-form.testdrive-form a.signin:after {
+form.testdrive-form .signin:after {
   left: -20px;
   border-width: 28px 20px 28px 0;
   border-color: transparent #fea542 transparent transparent;
 }
 
-form.testdrive-form a.signin:hover:before {
+form.testdrive-form .signin:hover:before {
   border-color: transparent transparent transparent #1496d5;
 }
 
-form.testdrive-form a.signin:hover:after {
+form.testdrive-form .signin:hover:after {
   border-color: transparent #1496d5 transparent transparent;
 }
 
-form.testdrive-form a.signin:active:before {
+form.testdrive-form .signin:active:before {
   border-color: transparent transparent transparent #15799c;
 }
 
-form.testdrive-form a.signin:active:after {
+form.testdrive-form .signin:active:after {
   border-color: transparent #15799c transparent transparent;
 }
 
-form.testdrive-form a.signin:hover {
+form.testdrive-form .signin:hover {
   color: #fff;
   border-top: 2px solid #1496d5;
   border-bottom: 2px solid #1496d5;
@@ -2993,7 +2997,7 @@ form.testdrive-form a.signin:hover {
   background-color: #1496d5;
 }
 
-form.testdrive-form a.signin:active {
+form.testdrive-form .signin:active {
   color: #fff;
   border-top: 2px solid #15799c;
   border-bottom: 2px solid #15799c;
@@ -3234,6 +3238,16 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
+}
+
+@media (min-width: 33.75em) and (max-width: 63.99em) {
+  section.test-drive a.social-loginbtn {
+    width: 70%;
+  }
+
+  section.test-drive a.social-loginbtn .fb,section.test-drive a.social-loginbtn .vk {
+    display: none;
+  }
 }
 
 @media (min-width: 540px) {
@@ -5063,6 +5077,25 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 @media (max-width: 539px) {
   ._xs-hidden-down {
     display: none !important;
+  }
+}
+
+@media (max-width: 33.74em) {
+  section.test-drive a.social-loginbtn {
+    width: 100%;
+    height: 100px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  section.test-drive a.social-loginbtn:before,section.test-drive a.social-loginbtn:after {
+    display: none;
+  }
+
+  section.test-drive a.social-loginbtn span {
+    width: 100%;
+    margin-bottom: 5px;
   }
 }
 
