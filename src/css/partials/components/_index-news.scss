@@ -5,6 +5,7 @@
 
 article.article-preview{
   cursor: pointer;
+  margin-bottom: 20px;
 
   &:hover{
     .text{  color: $blue;}

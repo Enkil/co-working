@@ -218,29 +218,37 @@ form.testdrive-form{
   }
 
   .img-upload{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 
     .upload{
-
+      width: 50%;
     }
+
+    .controls{
+      width: 50%;
+    }
+
     .photo{
       width: 100%;
       font-family: Arial;
       font-size: 15px;
       color: $black;
       display: block;
-      margin-bottom: 20px;
+      margin: 0;
     }
 
     .uploadbtn{
       margin: 0 auto;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       text-align: center;
       height: 30px;
       font-size: 8px;
       font-family: "Lato-Black";
       color: $orange;
-      width: 50%;
+      width: calc(100% - 40px);
       border-top: 2px solid $orange;
       border-bottom: 2px solid $orange;
       background-color: $white;
@@ -265,9 +273,9 @@ form.testdrive-form{
         border-width: 15px 0 15px 20px;
       }
       &:after{
-        top: -1px;
-        right: -18px;
-        border-width: 15px 0 15px 19px;
+        top: 0;
+        right: -17px;
+        border-width: 13px 0 13px 18px;
         border-color: transparent transparent transparent $white;
       }
       &:hover:before, &:hover:after{  border-color: transparent transparent transparent $orange;  }
@@ -287,6 +295,8 @@ form.testdrive-form{
       span {
         width: 100%;
         display: inline-block;
+        height: inherit;
+        line-height: 30px;
 
         &:before, &:after {
           position: absolute;
@@ -301,9 +311,9 @@ form.testdrive-form{
           border-width: 15px 20px 15px 0;
         }
         &:after {
-          top: -1px;
-          left: -18px;
-          border-width: 15px 19px 15px 0;
+          top: 0;
+          left: -17px;
+          border-width: 13px 18px 13px 0;
           border-color: transparent $white transparent transparent;
         }
         &:hover:before, &:hover:after {
