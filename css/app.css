@@ -2730,6 +2730,16 @@ section.test-drive {
   background-color: rgba(216,216,216,.11);
 }
 
+section.test-drive .subtitle {
+  font-family: 'Lato-Light';
+  font-size: 20px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #a7b3b2;
+}
+
 section.test-drive a.social-loginbtn {
   font-family: 'Lato-Bold';
   font-size: 15px;
