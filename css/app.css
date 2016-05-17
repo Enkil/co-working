@@ -3025,8 +3025,8 @@ form.testdrive-form .img-upload {
 form.testdrive-form .img-upload .upload {
   position: relative;
   overflow: hidden;
-  width: 50%;
-  height: 200px;
+  width: 40%;
+  height: 180px;
 }
 
 form.testdrive-form .img-upload .upload input {
