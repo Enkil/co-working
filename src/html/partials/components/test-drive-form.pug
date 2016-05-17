@@ -7,27 +7,27 @@ section.test-drive#test-drive-form
             .fb
             .vk
 
-        form.testdrive-form.row
-            .column.-xs-12.-md-6.-lg-4
-                label.label.-error
-                    span Имя
-                    input.input
+        form.testdrive-form.row#form-test-drive
             .column.-xs-12.-md-6.-lg-4
                 label.label
-                    span Фамилия
-                    input.input
+                    span Имя *
+                    input(name="name" required).input
             .column.-xs-12.-md-6.-lg-4
                 label.label
-                    span Телефон
-                    input(type="tel").input.js-input-tel
+                    span Фамилия *
+                    input(name="surname" required).input
             .column.-xs-12.-md-6.-lg-4
                 label.label
-                    span Электронная почта
-                    input.input
+                    span Телефон *
+                    input(name="phone" type="tel" required).input.js-input-tel
             .column.-xs-12.-md-6.-lg-4
                 label.label
-                    span Город проживания
-                    input.input
+                    span Электронная почта *
+                    input(name="email" required).input
+            .column.-xs-12.-md-6.-lg-4
+                label.label
+                    span Город проживания *
+                    input(name="city" required).input
             .column.-xs-12.-md-6.-lg-4._d-flex._align-center
                 label.checkbox
                     input(type="checkbox").js-input-checkbox
@@ -47,15 +47,15 @@ section.test-drive#test-drive-form
                             span Загрузить
             .column.-xs-12.-md-6.-lg-4
                 label.label
-                    span Ссылка на сайт
-                    input.input
+                    span Ссылка на сайт *
+                    input(name="siteurl" required).input
                 label.label
-                    span Род занятий
-                    input.input
+                    span Род занятий *
+                    input(name="work" required).input
             .column.-xs-12.-md-6.-lg-4
                 label.label.-social
                     span Социальные сети
                     input.input
             .column.-xs-12
-                a(href="javascript:void(0)").signin
+                button.signin
                     span Зарегистрироваться

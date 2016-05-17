@@ -5,30 +5,30 @@
     <h3 class="subtitle">Заполни форму и получи бесплатный день в коворкинге</h3><a class="social-loginbtn" href="javascript:void(0)"><span>Зарегистрироваться через социальные сети</span>
       <div class="fb"></div>
       <div class="vk"></div></a>
-    <form class="testdrive-form row">
+    <form class="testdrive-form row" id="form-test-drive">
       <div class="column -xs-12 -md-6 -lg-4">
-        <label class="label -error"><span>Имя</span>
-          <input class="input"/>
+        <label class="label"><span>Имя *</span>
+          <input class="input" name="name" required="required"/>
         </label>
       </div>
       <div class="column -xs-12 -md-6 -lg-4">
-        <label class="label"><span>Фамилия</span>
-          <input class="input"/>
+        <label class="label"><span>Фамилия *</span>
+          <input class="input" name="surname" required="required"/>
         </label>
       </div>
       <div class="column -xs-12 -md-6 -lg-4">
-        <label class="label"><span>Телефон</span>
-          <input class="input js-input-tel" type="tel"/>
+        <label class="label"><span>Телефон *</span>
+          <input class="input js-input-tel" name="phone" type="tel" required="required"/>
         </label>
       </div>
       <div class="column -xs-12 -md-6 -lg-4">
-        <label class="label"><span>Электронная почта</span>
-          <input class="input"/>
+        <label class="label"><span>Электронная почта *</span>
+          <input class="input" name="email" required="required"/>
         </label>
       </div>
       <div class="column -xs-12 -md-6 -lg-4">
-        <label class="label"><span>Город проживания</span>
-          <input class="input"/>
+        <label class="label"><span>Город проживания *</span>
+          <input class="input" name="city" required="required"/>
         </label>
       </div>
       <div class="column -xs-12 -md-6 -lg-4 _d-flex _align-center">
@@ -53,11 +53,11 @@
         </div>
       </div>
       <div class="column -xs-12 -md-6 -lg-4">
-        <label class="label"><span>Ссылка на сайт</span>
-          <input class="input"/>
+        <label class="label"><span>Ссылка на сайт *</span>
+          <input class="input" name="siteurl" required="required"/>
         </label>
-        <label class="label"><span>Род занятий</span>
-          <input class="input"/>
+        <label class="label"><span>Род занятий *</span>
+          <input class="input" name="work" required="required"/>
         </label>
       </div>
       <div class="column -xs-12 -md-6 -lg-4">
@@ -65,7 +65,9 @@
           <input class="input"/>
         </label>
       </div>
-      <div class="column -xs-12"><a class="signin" href="javascript:void(0)"><span>Зарегистрироваться</span></a></div>
+      <div class="column -xs-12">
+        <button class="signin"><span>Зарегистрироваться</span></button>
+      </div>
     </form>
   </div>
 </section>

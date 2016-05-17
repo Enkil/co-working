@@ -2,7 +2,9 @@ window.$ = window.jQuery =  require('jquery');
 window.slick =              require('./vendor/bower/slick');
 window.styler =             require('jquery.formstyler');
 window.gmaps =              require('gmaps');
-window.inputmask =              require('jquery.inputmask');
+window.inputmask =          require('jquery.inputmask');
+window.validate =           require('jquery-validation');
+// window.validate =           require('validate-js');
 
 $(document).ready(function() {
 
@@ -61,4 +63,15 @@ $(document).ready(function() {
 
     $('.js-input-tel').inputmask({"mask": "(9) (999) 999-9999", greedy: false});
 
+    $("#form-test-drive").validate({
+        errorClass: "-error",
+        validClass: "valid",
+        highlight: function( element, errorClass, validClass ) {
+            $(element).parent().addClass(errorClass).removeClass(validClass);
+        },
+        unhighlight: function( element, errorClass, validClass ) {
+            $(element).parent().removeClass(errorClass).addClass(validClass);
+        },
+        errorPlacement: $.noop
+    });
 });
