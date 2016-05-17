@@ -2,11 +2,20 @@ include ../abstracts/mixins/_menu.pug
 
 .main-slider
     .content-block
-        a(href='#contacts' title="На старт").startbtn
-        p.slogan CREATE YOUR LIFE'S WORK
+        a(href='#test-drive-form' title="На старт").startbtn
+        p.slogan Создай своё рабочее пространство
         +menu({coworking:'Коворкинг',place:'Пространство',services:'Услуги'})
 
     .index-slider#index-slider
-        - for (i=0; i<6; i++)
-            .slide
-                img(src="../img/pics/main-slider-slide.png")
+        .slide
+            img(src="../img/pics/main-slider-slide.png")
+        .slide
+            img(src="../img/pics/1.jpg")
+        .slide
+            img(src="../img/pics/2.jpg")
+        .slide
+            img(src="../img/pics/3.jpg")
+        .slide
+            img(src="../img/pics/4.jpg")
+        .slide
+            img(src="../img/pics/5.jpg")

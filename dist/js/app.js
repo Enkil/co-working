@@ -14868,7 +14868,7 @@ $(document).ready(function() {
 
     $("#index-slider").slick({
         dots: true,
-        fade: true
+        fade: false
     });
 
     $('select.js-select').styler();
