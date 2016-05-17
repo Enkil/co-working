@@ -3,6 +3,16 @@ section.test-drive{
   padding-top: 20px;
   margin-top: 40px;
 
+  .subtitle{
+    font-size: 20px;
+    color: $lightgray;
+    font-family: "Lato-Light";
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
   a.social-loginbtn{
     margin: 0 auto;
     margin-top: 40px;
