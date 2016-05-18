@@ -1958,8 +1958,8 @@ div.b-sigin a.btn:active {
 
 .main-slider .content-block .startbtn {
   display: block;
-  width: 260px;
-  height: 260px;
+  width: 220px;
+  height: 220px;
   margin: 0 auto;
   margin-bottom: 40px;
   -webkit-transition: all .325s ease 0s;
@@ -1975,7 +1975,7 @@ div.b-sigin a.btn:active {
 
 .main-slider .content-block .slogan {
   font-family: 'OpenSans-ExtraBold';
-  font-size: 76px;
+  font-size: 66px;
   margin: 0;
   margin-bottom: 30px;
   text-align: center;
@@ -3376,6 +3376,12 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 
   section.test-drive a.social-loginbtn .fb,section.test-drive a.social-loginbtn .vk {
     display: none;
+  }
+}
+
+@media (min-width: 50em) and (max-width: 79.99em) {
+  .main-slider .content-block .slogan {
+    font-size: 40px;
   }
 }
 
@@ -5210,6 +5216,22 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 }
 
 @media (max-width: 79.99em) {
+  body {
+    padding-top: 133px;
+  }
+
+  .main-slider .content-block .list {
+    display: none;
+  }
+
+  .main-slider .index-slider {
+    height: calc(100vh - 133px);
+  }
+
+  .main-slider .index-slider .slide img {
+    height: calc(100vh - 133px);
+  }
+
   .create-title {
     font-size: 30px;
   }
@@ -5238,10 +5260,6 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 
   a.all-info span.icon {
     left: 10%;
-  }
-
-  body {
-    padding-top: 133px;
   }
 
   nav.header-nav ul.list {
@@ -5280,6 +5298,10 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
     margin-top: 10px;
   }
 
+  .main-slider .content-block .slogan {
+    font-size: 20px;
+  }
+
   .contacts-block .checkbox {
     margin-top: 20px;
   }
@@ -5291,20 +5313,12 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
     height: 96px;
   }
 
-  .main-slider .content-block .slogan {
-    font-size: 20px;
+  .main-slider .index-slider .slick-prev {
+    left: 5%;
   }
 
-  .main-slider .content-block .list {
-    display: none;
-  }
-
-  .main-slider .index-slider {
-    height: calc(100vh - 133px);
-  }
-
-  .main-slider .index-slider .slide img {
-    height: calc(100vh - 133px);
+  .main-slider .index-slider .slick-next {
+    right: 5%;
   }
 
   section.test-drive a.social-loginbtn {

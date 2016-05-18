@@ -16404,7 +16404,9 @@ $(document).ready(function() {
     // Index top slider
     $("#index-slider").slick({
         dots: true,
-        fade: false
+        fade: false,
+        autoplay: true,
+        autoplaySpeed: 3000
     });
 
     // Style inputs
