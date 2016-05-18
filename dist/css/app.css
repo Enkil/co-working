@@ -2651,7 +2651,7 @@ article.article-preview .date-wrap .month {
 .tariff-item .price-block .buy:before,.tariff-item .price-block .buy:after {
   position: absolute;
   top: -2px;
-  right: -20px;
+  right: -19px;
   display: block;
   width: 0;
   height: 0;
@@ -2662,7 +2662,7 @@ article.article-preview .date-wrap .month {
 }
 
 .tariff-item .price-block .buy:after {
-  left: -20px;
+  left: -19px;
   border-width: 28px 20px 28px 0;
   border-color: transparent #fea542 transparent transparent;
 }
@@ -3040,7 +3040,6 @@ form.testdrive-form label.label.-error input.input {
 }
 
 form.testdrive-form label.label.-valid {
-  display: block !important;
   color: #59d86b;
 }
 

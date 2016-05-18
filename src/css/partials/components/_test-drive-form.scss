@@ -169,7 +169,6 @@ form.testdrive-form{
     }
     &.-valid{
       color: $green;
-      display: block!important;
 
       input.input{
         background-color: lighten($green, 30%);
