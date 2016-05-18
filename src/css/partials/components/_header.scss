@@ -1,6 +1,6 @@
 body{
   padding-top: 83px;
-  @include mq($from:xs, $until: lg){
+  @include mq($from:xs, $until: xl){
     padding-top: 133px;
   }
 }
