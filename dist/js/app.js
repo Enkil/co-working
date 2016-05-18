@@ -16401,21 +16401,23 @@ window.validate =           require('jquery-validation');
 
 $(document).ready(function() {
 
+    // Index top slider
     $("#index-slider").slick({
         dots: true,
         fade: false
     });
 
+    // Style inputs
     $('select.js-select').styler();
     $('input.js-input-checkbox').styler();
 
+    // Map
     var map = new gmaps({
         el: '#index-map',
         lat: -12.043333,
         lng: -77.028333,
         scrollwheel: false
     });
-
     map.addMarker({
         lat: -12.043333,
         lng: -77.028333,
@@ -16425,6 +16427,7 @@ $(document).ready(function() {
         }
     });
 
+    // Partners slider
     $("#partner-slider").slick({
         dots: false,
         infinite: true,
@@ -16432,22 +16435,6 @@ $(document).ready(function() {
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true
-    });
-
-    // Smooth scrolling
-    $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top - 140
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
     });
     
     $('.js-article-preview').click(function () {
@@ -16483,6 +16470,26 @@ $(document).ready(function() {
             menuList[i].classList.toggle('-open');
         }
     };
+
+    // Smooth scrolling
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 140
+                    }, 1000);
+                    toggler.classList.toggle('-open');
+                    for (i=0; i < menuList.length; i++) {
+                        menuList[i].classList.toggle('-open');
+                    }
+                    return false;
+                }
+            }
+        });
+    });
 });
 },{"./vendor/bower/slick":9,"gmaps":1,"jquery":7,"jquery-validation":2,"jquery.formstyler":3,"jquery.inputmask":6}],9:[function(require,module,exports){
 /*

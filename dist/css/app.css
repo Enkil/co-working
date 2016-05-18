@@ -2016,15 +2016,14 @@ div.b-sigin a.btn:active {
 
 .main-slider .index-slider {
   position: relative;
-}
-
-.main-slider .index-slider .slide {
-  max-height: 890px;
+  height: calc(100vh - 83px);
 }
 
 .main-slider .index-slider .slide img {
   width: 100%;
-  height: auto;
+  height: calc(100vh - 83px);
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .main-slider .index-slider .slick-arrow {
@@ -5241,6 +5240,10 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
     left: 10%;
   }
 
+  body {
+    padding-top: 133px;
+  }
+
   nav.header-nav ul.list {
     display: none;
     -webkit-flex-wrap: wrap;
@@ -5283,6 +5286,27 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 }
 
 @media (max-width: 33.74em) {
+  .main-slider .content-block .startbtn {
+    width: 96px;
+    height: 96px;
+  }
+
+  .main-slider .content-block .slogan {
+    font-size: 20px;
+  }
+
+  .main-slider .content-block .list {
+    display: none;
+  }
+
+  .main-slider .index-slider {
+    height: calc(100vh - 133px);
+  }
+
+  .main-slider .index-slider .slide img {
+    height: calc(100vh - 133px);
+  }
+
   section.test-drive a.social-loginbtn {
     width: 100%;
     height: 100px;

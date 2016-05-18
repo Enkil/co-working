@@ -1,5 +1,8 @@
 body{
   padding-top: 83px;
+  @include mq($from:xs, $until: lg){
+    padding-top: 133px;
+  }
 }
 header.b-header{
   background-color: $darkgrey;
@@ -119,7 +122,6 @@ nav.header-nav{
       position: fixed;
       left: 0;
       width: 100%;
-      //margin-top: 40px;
       background-color: $darkgrey;
       top: 130px;
       padding-top: 20px;

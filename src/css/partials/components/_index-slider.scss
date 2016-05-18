@@ -23,6 +23,10 @@
       &:hover{
         background-image: url("../img/pics/start-btn_hover.png");
       }
+      @include mq($from:xs, $until: sm){
+        width: 96px;
+        height: 96px;
+      }
     }
 
     .slogan{
@@ -35,6 +39,9 @@
       font-family: "OpenSans-ExtraBold";
       letter-spacing: 3px;
       text-shadow: 2px 2px 2px $darkgrey;
+      @include mq($from:xs, $until: sm){
+        font-size: 20px;
+      }
     }
 
     .list{
@@ -46,6 +53,10 @@
       background-color: $grey;
       padding: 0;
       margin: 0;
+
+      @include mq($from:xs, $until: sm){
+        display: none;
+      }
 
       .item{
         display: inline-block;
@@ -63,12 +74,20 @@
 
   .index-slider{
     position: relative;
+    height: calc(100vh - 83px);
+    @include mq($from:xs, $until: sm){
+      height: calc(100vh - 133px);
+    }
 
     .slide{
-      max-height: 890px;
+      //max-height: 890px;
       img{
         width: 100%;
-        height: auto;
+        object-fit: cover;
+        height: calc(100vh - 83px);
+        @include mq($from:xs, $until: sm){
+          height: calc(100vh - 133px);
+        }
       }
     }
 
