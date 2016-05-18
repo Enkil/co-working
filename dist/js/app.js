@@ -16481,9 +16481,9 @@ $(document).ready(function() {
                     $('html, body').animate({
                         scrollTop: target.offset().top - 140
                     }, 1000);
-                    toggler.classList.toggle('-open');
+                    toggler.classList.remove('-open');
                     for (i=0; i < menuList.length; i++) {
-                        menuList[i].classList.toggle('-open');
+                        menuList[i].classList.remove('-open');
                     }
                     return false;
                 }
