@@ -41,6 +41,9 @@
     z-index: 10;
     text-align: center;
     letter-spacing: 3px;
+    @include mq($from:xs, $until: lg){
+      font-size: 30px;
+    }
   }
 
   .img{
@@ -91,13 +94,19 @@
       color: $white;
       font-family: "Lato-Regular";
       font-size: 60px;
-      letter-spacing: 3;
+      letter-spacing: 3px;
+      @include mq($from:xs, $until: lg){
+        font-size: 40px;
+      }
     }
     .places{
       color: $white;
       font-family: "Lato-Bold";
       font-size: 30px;
       letter-spacing: 2px;
+      @include mq($from:xs, $until: lg){
+        font-size: 20px;
+      }
     }
     .address{
       color: $white;

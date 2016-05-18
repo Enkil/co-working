@@ -69,6 +69,10 @@
 
   .checkbox{
     display: flex;
+    align-items: center;
+    @include mq($from:xs, $until: md){
+      margin-top: 20px;
+    }
   }
   .checkbox span{
     height: 100%;

@@ -160,6 +160,7 @@ form.testdrive-form{
     
     &.-error{
       color: $red;
+      display: block!important;
 
       input.input{
         background-color: $lightred;
@@ -201,6 +202,9 @@ form.testdrive-form{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    @include mq($from:xs, $until: lg){
+      width: 80%;
+    }
 
     &:before, &:after{
       position: absolute;

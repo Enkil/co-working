@@ -8,7 +8,7 @@ header.b-header{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 500;
 }
 
@@ -43,13 +43,14 @@ nav.header-nav{
   .b-gamburger{
     display: flex;
     align-items: center;
-    width: 7em;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: flex-end;
     height: 3em;
     line-height: 3em;
     user-select: none;
     margin: 0 auto;
     text-decoration: none;
+    cursor: pointer;
 
     .toggler{
       display: inline-block;
@@ -109,7 +110,7 @@ nav.header-nav{
     padding: 0;
     display: flex;
     justify-content: space-around;
-    @include mq($from:xs, $until: xl){
+    @include mq($from:xs, $until: lg){
       display: none;
       flex-wrap: wrap;
     }
@@ -120,7 +121,7 @@ nav.header-nav{
       width: 100%;
       //margin-top: 40px;
       background-color: $darkgrey;
-      top: 72px;
+      top: 130px;
       padding-top: 20px;
       margin: 0;
     }
@@ -128,7 +129,7 @@ nav.header-nav{
 
   li.item{
     display: inline-block;
-    @include mq($from:xs, $until: xl){
+    @include mq($from:xs, $until: lg){
       display: block;
       width: 100%;
       text-align: center;
@@ -193,8 +194,12 @@ div.b-sigin{
     border-radius: 7px;
     padding-top: 19px;
     padding-bottom: 19px;
-    @include mq($from:md, $until: lg){
-      font-size: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    @include mq($from:xs, $until: md){
+      margin-top: 10px;
+      font-size: 10px;
     }
     &:hover{
       background-color: $blue;
