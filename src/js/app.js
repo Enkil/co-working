@@ -63,6 +63,7 @@ $(document).ready(function() {
 
     $('.js-input-tel').inputmask({"mask": "(9) (999) 999-9999", greedy: false});
 
+    // Form validation
     $("#form-test-drive").validate({
         errorClass: "-error",
         validClass: "valid",
@@ -74,4 +75,17 @@ $(document).ready(function() {
         },
         errorPlacement: $.noop
     });
+
+
+    // Top menu toggler
+    var toggler = document.querySelector('.js-top-toggler');
+    var topMenu = document.querySelector('#js-top-menu');
+    var menuList = topMenu.querySelectorAll('ul.list');
+    toggler.onclick = function(e){
+        e.preventDefault();
+        toggler.classList.toggle('-open');
+        for (i=0; i < menuList.length; i++) {
+            menuList[i].classList.toggle('-open');
+        }
+    };
 });

@@ -5,18 +5,21 @@ header.b-header
     .container
         .row
             // Logo
-            .column.-xs-2._d-flex._align-center._justify-center
+            .column.-xs-3.-md-3.-lg-2._d-flex._align-center._justify-center
                 a(href="javascript:void(0)" title= "Co-Working \"Start\" • CREATE YOUR LIFE'S WORK").b-logo
                     .logo
                         img(src="../img/pics/logo.png")
-                    .sitename
+                    .sitename._sm-hidden-down
                         img(src="../svg/pics/sitename.svg")
             // Navigation
-            .column.-xs-6._d-flex._align-center
-                nav.header-nav
+            .column.-xs-5.-md-4.-lg-4.-xl-6._d-flex._align-center
+                nav.header-nav#js-top-menu
+                    a(href="javascript:void(0)").b-gamburger.js-top-toggler._xl-hidden-up
+                        span.toggler
+                        span.text Меню
                     +menu({about:'О нас',news:'Новости',anounces:'Анонсы',services:'Услуги',tariffs:'Тарифы',locations:'Локации',reviews:'Отзывы',contacts:'Контакты'})
             // App icons
-            .column.-xs-1._d-flex._align-center._justify-center
+            .column.-xs-4.-md-2.-lg-3.-xl-1._d-flex._align-center._justify-center
                 .app-icons
                     a(href="javascript:void(0)" title= "Скачать iOS-приложение").icon
                         svg
@@ -25,6 +28,6 @@ header.b-header
                         svg
                             use(xlink:href="#android")
             // SigIn/User
-            .column.-xs-3._d-flex._align-center
+            .column.-xs-12.-md-3._d-flex._align-center
                 .b-sigin
                     a(href="javascript:void(0)" title= "Зарегистрироваться").btn Зарегистрироваться

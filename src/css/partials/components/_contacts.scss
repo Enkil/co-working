@@ -67,9 +67,14 @@
     background-color: $white;
   }
 
+  .checkbox{
+    display: flex;
+  }
   .checkbox span{
     height: 100%;
-    line-height: 40px;
+    line-height: 1;
+    display: inline-block;
+    width: calc(100% - 32px);
     font-family: Arial;
     font-size: 11px;
     color: $black;
