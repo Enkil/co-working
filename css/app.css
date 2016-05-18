@@ -5209,6 +5209,24 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
   }
 }
 
+@media (max-width: 79.99em) {
+  .create-title {
+    font-size: 30px;
+  }
+
+  .location-block .name {
+    font-size: 30px;
+  }
+
+  .location-block .pop-up .num {
+    font-size: 40px;
+  }
+
+  .location-block .pop-up .places {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 63.99em) {
   h2.h2-title:before,h2.h2-title:after {
     display: none;
@@ -5245,22 +5263,6 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
   nav.header-nav li.item a.link:hover {
     color: #fff;
     background-color: #fea542;
-  }
-
-  .create-title {
-    font-size: 30px;
-  }
-
-  .location-block .name {
-    font-size: 30px;
-  }
-
-  .location-block .pop-up .num {
-    font-size: 40px;
-  }
-
-  .location-block .pop-up .places {
-    font-size: 20px;
   }
 
   form.testdrive-form .signin {
