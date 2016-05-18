@@ -1982,6 +1982,7 @@ div.b-sigin a.btn:active {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #fff;
+  text-shadow: 2px 2px 2px #4a4a4a;
 }
 
 .main-slider .content-block .list {
