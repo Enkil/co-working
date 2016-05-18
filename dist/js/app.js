@@ -16448,17 +16448,24 @@ $(document).ready(function() {
     $('.js-input-tel').inputmask({"mask": "(9) (999) 999-9999", greedy: false});
 
     // Form validation
-    $("#form-test-drive").validate({
-        errorClass: "-error",
-        validClass: "valid",
-        highlight: function( element, errorClass, validClass ) {
-            $(element).parent().addClass(errorClass).removeClass(validClass);
-        },
-        unhighlight: function( element, errorClass, validClass ) {
-            $(element).parent().removeClass(errorClass).addClass(validClass);
-        },
-        errorPlacement: $.noop
-    });
+    var form = $("form");
+    $.validator.messages.required = '';
+    form.each( function() {
+        $(this).validate({
+            errorClass: "-error",
+            validClass: "-valid",
+            errorElement: "em",
+            highlight: function( element, errorClass, validClass ) {
+                $(element).parent().addClass(errorClass).removeClass(validClass);
+            },
+            unhighlight: function( element, errorClass, validClass ) {
+                $(element).parent().removeClass(errorClass).addClass(validClass);
+            },
+            errorPlacement: function(error,element) {
+                return true;
+            }
+        });
+    } );
 
 
     // Top menu toggler

@@ -3021,6 +3021,7 @@ form.testdrive-form label.label {
   width: 100%;
   margin-bottom: 20px;
   color: #000;
+  outline: none;
 }
 
 form.testdrive-form label.label span {
@@ -3038,6 +3039,15 @@ form.testdrive-form label.label.-error input.input {
   background-color: #f3e9eb;
 }
 
+form.testdrive-form label.label.-valid {
+  display: block !important;
+  color: #59d86b;
+}
+
+form.testdrive-form label.label.-valid input.input {
+  background-color: #d5f5d9;
+}
+
 form.testdrive-form input.input {
   font-family: 'Lato-Semibold';
   font-size: 22px;
@@ -3049,6 +3059,7 @@ form.testdrive-form input.input {
   color: #000;
   border: none;
   border-radius: 4px;
+  outline: none;
   background-color: #e9f0f3;
 }
 

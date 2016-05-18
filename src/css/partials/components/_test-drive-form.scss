@@ -152,6 +152,7 @@ form.testdrive-form{
     color: $black;
     display: block;
     margin-bottom: 20px;
+    outline: none;
     span{
       width: 100%;
       display: block;
@@ -166,9 +167,18 @@ form.testdrive-form{
         background-color: $lightred;
       }
     }
+    &.-valid{
+      color: $green;
+      display: block!important;
+
+      input.input{
+        background-color: lighten($green, 30%);
+      }
+    }
   }
 
   input.input{
+    outline: none;
     width: 100%;
     display: block;
     border-radius: 4px;
