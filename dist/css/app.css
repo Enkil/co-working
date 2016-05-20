@@ -1561,7 +1561,7 @@ h2.h2-title.-light {
   font-size: 30px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #eaeaea;
+  color: #000;
 }
 
 h2.h2-title.-light:before,h2.h2-title.-light:after {
