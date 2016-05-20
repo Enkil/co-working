@@ -2004,6 +2004,7 @@ div.b-loggedin a.profile-block .img img {
   top: 20px;
   right: 0;
   left: 0;
+  width: 60%;
   max-width: 60%;
   margin: 0 auto;
 }
@@ -5766,6 +5767,10 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 }
 
 @media (max-width: 33.74em) {
+  div.b-sigin a.btn {
+    font-size: 8px;
+  }
+
   .main-slider .content-block .startbtn {
     width: 96px;
     height: 96px;
