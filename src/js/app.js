@@ -8,6 +8,20 @@ window.validate =           require('jquery-validation');
 
 $(document).ready(function() {
 
+    // Logged/SignIn
+    $(".b-sigin").click(function () {
+        if (!($(this).hasClass("_hide"))){
+         $(this).addClass("_hide");
+         $(".b-loggedin").removeClass("_hide");
+        }
+    });
+    $(".b-loggedin").click(function () {
+        if (!($(this).hasClass("_hide"))){
+            $(this).addClass("_hide");
+            $(".b-sigin").removeClass("_hide");
+        }
+    });
+
     // Index top slider
     $("#index-slider").slick({
         dots: true,
@@ -117,7 +131,6 @@ $(document).ready(function() {
         });
     } );
 
-
     // Top menu toggler
     var toggler = document.querySelector('.js-top-toggler');
     var topMenu = document.querySelector('#js-top-menu');
@@ -149,4 +162,6 @@ $(document).ready(function() {
             }
         });
     });
+
+
 });
