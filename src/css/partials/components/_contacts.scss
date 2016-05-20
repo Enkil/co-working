@@ -7,11 +7,12 @@
     height: 40px;
     &:hover{
       .jq-selectbox__select-text{  color: $orange;} }
-    &.opened .jq-selectbox__select{  border-bottom: none;  }
+    &.opened .jq-selectbox__select{  border-bottom: none!important;  }
   }
+  //.opened .jq-selectbox__select{  border-bottom: none;  }
   .jq-selectbox.focused .jq-selectbox__select{
     border: 1px solid $black;
-    border-bottom: none;
+    //border-bottom: none;
   }
   .jq-selectbox__trigger{
     border-left: none;

@@ -2333,12 +2333,11 @@ article.article-preview .date-wrap .month {
 }
 
 .contacts-block .js-select.opened .jq-selectbox__select {
-  border-bottom: none;
+  border-bottom: none !important;
 }
 
 .contacts-block .jq-selectbox.focused .jq-selectbox__select {
   border: 1px solid #000;
-  border-bottom: none;
 }
 
 .contacts-block .jq-selectbox__trigger {
