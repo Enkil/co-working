@@ -3333,9 +3333,46 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 }
 
 .zones-section {
-  height: 700px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.zones-section .services-block {
+  padding: 60px 0;
+  background-image: url(../img/bg/zones-bg-phone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.zones-section .services-block h2.title {
+  font-family: 'Lato-Light';
+  font-size: 14px;
+  margin-bottom: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.zones-section .services-block .service-item {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.zones-section .services-block .service-item .img {
+  width: 81px;
+  height: 91px;
+}
+
+.zones-section .services-block .service-item .title {
+  font-family: 'Lato-Medium';
+  font-size: 16px;
+  color: #fea542;
+}
+
+.zones-section .services-block .service-item .text {
+  font-family: 'Arial';
+  font-size: 11px;
+  color: #fff;
 }
 
 .sliders-wrapper {
