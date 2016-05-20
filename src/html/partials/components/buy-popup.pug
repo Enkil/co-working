@@ -1,0 +1,15 @@
+.buy-popup
+    .close
+    h2.title Оплата
+    p.text Пожалуйста. заполните следующие данные
+    form
+        label.label
+            span Имя
+            input(name="bp-name" required).input
+        label.label
+            span Электронная почта
+            input(name="bp-mail" required).input
+        label.label
+            span Телефон
+            input(name="bp-phone" type="tel" required).input.js-input-tel
+        button.btn Оплатить

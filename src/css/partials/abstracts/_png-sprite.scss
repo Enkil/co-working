@@ -7,11 +7,23 @@ SCSS variables are information about icon's compiled state, stored under its ori
 
 At the bottom of this section, we provide information about the spritesheet itself
 */
+$s-close: (
+  name: 's-close',
+  x: 30px,
+  y: 109px,
+  offset-x: -30px,
+  offset-y: -109px,
+  width: 12px,
+  height: 12px,
+  total-width: 193px,
+  total-height: 138px,
+  image: '../img/sprite/png-sprite.png'
+);
 $s-conference: (
   name: 's-conference',
-  x: 49px,
+  x: 98px,
   y: 55px,
-  offset-x: -49px,
+  offset-x: -98px,
   offset-y: -55px,
   width: 48px,
   height: 53px,
@@ -22,9 +34,9 @@ $s-conference: (
 $s-coworking: (
   name: 's-coworking',
   x: 98px,
-  y: 55px,
+  y: 0px,
   offset-x: -98px,
-  offset-y: -55px,
+  offset-y: 0px,
   width: 48px,
   height: 53px,
   total-width: 193px,
@@ -129,9 +141,9 @@ $s-logo-min: (
 );
 $s-negotiations: (
   name: 's-negotiations',
-  x: 0px,
+  x: 49px,
   y: 55px,
-  offset-x: 0px,
+  offset-x: -49px,
   offset-y: -55px,
   width: 48px,
   height: 53px,
@@ -141,10 +153,10 @@ $s-negotiations: (
 );
 $s-offices: (
   name: 's-offices',
-  x: 98px,
-  y: 0px,
-  offset-x: -98px,
-  offset-y: 0px,
+  x: 0px,
+  y: 55px,
+  offset-x: 0px,
+  offset-y: -55px,
   width: 48px,
   height: 53px,
   total-width: 193px,
@@ -167,7 +179,7 @@ $spritesheet: (
   width: 193px,
   height: 138px,
   image: '../img/sprite/png-sprite.png',
-  sprites: ($s-conference, $s-coworking, $s-icon-all-info, $s-icon-all-info-hover, $s-icon-bq-left, $s-icon-bq-right, $s-icon-fb, $s-icon-vk, $s-kitchen, $s-logo-min, $s-negotiations, $s-offices, $s-recreation, )
+  sprites: ($s-close, $s-conference, $s-coworking, $s-icon-all-info, $s-icon-all-info-hover, $s-icon-bq-left, $s-icon-bq-right, $s-icon-fb, $s-icon-vk, $s-kitchen, $s-logo-min, $s-negotiations, $s-offices, $s-recreation, )
 );
 
 /*

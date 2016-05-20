@@ -1,0 +1,154 @@
+._unscrolled{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.buy-popup{
+  width: 320px;
+  display: table;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 600px;
+  margin: auto;
+  background-color: $white;
+  box-shadow: 0 0 2px 0 $black;
+  z-index: 2000;
+  padding: 40px;
+  box-sizing: border-box;
+  outline: none;
+  
+  .close{
+    @include sprite($s-close);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    &:hover{  opacity: .7;}
+  }
+
+  .title{
+    font-family: "Lato-Light";
+    font-size: 16px;
+    color: $black;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  .text{
+    font-family: Arial;
+    font-size: 9px;
+    color: $grey;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  label.label{
+    width: 100%;
+    font-family: Arial;
+    font-size: 15px;
+    color: $black;
+    display: block;
+    margin-bottom: 20px;
+    outline: none;
+    text-align: center;
+    span{
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &.-error{
+      color: $red;
+      display: block!important;
+
+      input.input{
+        background-color: $lightred;
+      }
+    }
+    &.-valid{
+      color: $green;
+
+      input.input{
+        background-color: lighten($green, 30%);
+      }
+    }
+  }
+
+  input.input{
+    outline: none;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    height: 55px;
+    background-color: $lightblue;
+    border: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-family: "Lato-Semibold";
+    font-size: 22px;
+    color: $black;
+  }
+
+  .btn{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    height: 55px;
+    font-size: 15px;
+    font-family: "Lato-Bold";
+    color: $white;
+    width: 85%;
+    border-top: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+    background-color: $orange;
+    text-decoration: none;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &:before, &:after{
+      position: absolute;
+      top: -2px;
+      right: -19px;
+      display: block;
+      width: 0;
+      height: 0;
+      content: '';
+      border-color: transparent transparent transparent $orange;
+      border-style: solid;
+      border-width: 28px 0 28px 20px;
+    }
+    &:after{
+      left: -19px;
+      border-width: 28px 20px 28px 0;
+      border-color: transparent $orange transparent transparent;
+    }
+    &:hover:before{  border-color: transparent transparent transparent $blue;  }
+    &:hover:after{  border-color: transparent $blue transparent transparent;}
+    &:active:before{  border-color: transparent transparent transparent $darkblue;  }
+    &:active:after{ border-color: transparent $darkblue transparent transparent;}
+
+    &:hover{
+      background-color: $blue;
+      color: $white;
+      border-top: 2px solid $blue;
+      border-bottom: 2px solid $blue;
+      background-color: $blue;
+    }
+    &:active{
+      background-color: $darkblue;
+      color: $white;
+      border-top: 2px solid $darkblue;
+      border-bottom: 2px solid $darkblue;
+    }
+  }
+}

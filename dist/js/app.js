@@ -16471,20 +16471,20 @@ $(document).ready(function() {
     $('input.js-input-checkbox').styler();
 
     // Map
-    var map = new gmaps({
-        el: '#index-map',
-        lat: -12.043333,
-        lng: -77.028333,
-        scrollwheel: false
-    });
-    map.addMarker({
-        lat: -12.043333,
-        lng: -77.028333,
-        title: 'Lima',
-        infoWindow: {
-            content: '<p>HTML Content</p>'
-        }
-    });
+    // var map = new gmaps({
+    //     el: '#index-map',
+    //     lat: -12.043333,
+    //     lng: -77.028333,
+    //     scrollwheel: false
+    // });
+    // map.addMarker({
+    //     lat: -12.043333,
+    //     lng: -77.028333,
+    //     title: 'Lima',
+    //     infoWindow: {
+    //         content: '<p>HTML Content</p>'
+    //     }
+    // });
 
     // Partners slider
     $("#partner-slider").slick({
@@ -16553,7 +16553,27 @@ $(document).ready(function() {
         });
     });
 
+    // Buy popup
+    $(".price-block").find(".buy").click(function (data) {
+        var _this = $(this);
 
+        $.get('partials/components/buy-popup.html', function(data) {
+            $("header").append(data);
+            console.info('Загрузка завершена.');
+            $("html").addClass("_unscrolled")
+        });
+    });
+    // $(".buy-popup").find(".close").click( function () {
+    //     $(this).addClass("_hide");
+    // })
+
+    // $(".buy-popup").find(".close").click(function () {
+    //     $(".buy-popup").hide("slow");
+    // });
+
+    $(document).on('click', '.close', function () {
+        $(this).parents('div').fadeOut();
+    });
 });
 },{"./vendor/bower/slick":9,"gmaps":1,"jquery":7,"jquery-validation":2,"jquery.formstyler":3,"jquery.inputmask":6}],9:[function(require,module,exports){
 /*
