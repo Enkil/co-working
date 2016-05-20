@@ -211,3 +211,43 @@ div.b-sigin{
     }
   }
 }
+
+div.b-loggedin{
+  width: 100%;
+  @include mq($from:xs, $until: md){
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  a.profile-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-decoration: none;
+
+    .name{
+      font-family: "Lato-Black";
+      font-size: 12px;
+      color: $white;
+      display: inline-block;
+      letter-spacing: 1.6px;
+      line-height: 15px;
+      width: 60%;
+      text-align: right;
+    }
+    .img{
+      width: 45px;
+      height: 54px;
+      background-color: $white;
+      overflow: hidden;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      display: flex;
+      margin-left: 20px;
+      img{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
