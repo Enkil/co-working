@@ -2017,17 +2017,11 @@ div.b-sigin a.btn:active {
 .main-slider .index-slider {
   position: relative;
   height: calc(100vh - 83px);
-  min-height: 768px;
-}
-
-.main-slider .index-slider .slide {
-  min-height: 768px;
 }
 
 .main-slider .index-slider .slide img {
   width: 100%;
   height: calc(100vh - 83px);
-  min-height: 768px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -3658,6 +3652,20 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 @media (min-width: 50em) and (max-width: 79.99em) {
   .main-slider .content-block .slogan {
     font-size: 40px;
+  }
+}
+
+@media (min-width: 50em) {
+  .main-slider .index-slider {
+    min-height: 768px;
+  }
+
+  .main-slider .index-slider .slide {
+    min-height: 768px;
+  }
+
+  .main-slider .index-slider .slide img {
+    min-height: 768px;
   }
 }
 
