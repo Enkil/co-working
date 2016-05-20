@@ -16409,6 +16409,49 @@ $(document).ready(function() {
         autoplaySpeed: 3000
     });
 
+    // Zones slider
+    $(".zones-slider").slick({
+        dots: false,
+        fade: false,
+        autoplay: false,
+        autoplaySpeed: 3000
+    });
+
+    $("#js-zones-menu").find(".link").click(function () {
+        var _this = $(this);
+        var links = $("#js-zones-menu").find(".link");
+
+        // $(".zones-slider").slick('unslick');
+
+        links.removeClass("-active");
+        _this.addClass("-active");
+
+        if (_this.hasClass("-coworking")){
+            $(".zones-slider").removeClass("-active");
+            $(".zones-slider.-coworking").addClass("-active").slick('setPosition');
+        } else
+        if(_this.hasClass("-offices")){
+            $(".zones-slider").removeClass("-active");
+            $(".zones-slider.-offices").addClass("-active").slick('setPosition');
+        } else
+        if(_this.hasClass("-conference")){
+            $(".zones-slider").removeClass("-active");
+            $(".zones-slider.-conference").addClass("-active").slick('setPosition');
+        } else
+        if(_this.hasClass("-negotiations")){
+            $(".zones-slider").removeClass("-active");
+            $(".zones-slider.-negotiations").addClass("-active").slick('setPosition');
+        } else
+        if(_this.hasClass("-kitchen")){
+            $(".zones-slider").removeClass("-active");
+            $(".zones-slider.-kitchen").addClass("-active").slick('setPosition');
+        } else
+        if(_this.hasClass("-recreation")){
+            $(".zones-slider").removeClass("-active");
+            $(".zones-slider.-recreation").addClass("-active").slick('setPosition');
+        }
+    });
+
     // Style inputs
     $('select.js-select').styler();
     $('input.js-input-checkbox').styler();
