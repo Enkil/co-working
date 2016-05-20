@@ -5730,9 +5730,10 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
   }
 
   nav.header-nav li.item a.link {
+    font-size: 10px;
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #fea542;
   }
 
