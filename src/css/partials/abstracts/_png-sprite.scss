@@ -7,95 +7,167 @@ SCSS variables are information about icon's compiled state, stored under its ori
 
 At the bottom of this section, we provide information about the spritesheet itself
 */
+$s-conference: (
+  name: 's-conference',
+  x: 49px,
+  y: 55px,
+  offset-x: -49px,
+  offset-y: -55px,
+  width: 48px,
+  height: 53px,
+  total-width: 193px,
+  total-height: 138px,
+  image: '../img/sprite/png-sprite.png'
+);
+$s-coworking: (
+  name: 's-coworking',
+  x: 98px,
+  y: 55px,
+  offset-x: -98px,
+  offset-y: -55px,
+  width: 48px,
+  height: 53px,
+  total-width: 193px,
+  total-height: 138px,
+  image: '../img/sprite/png-sprite.png'
+);
 $s-icon-all-info: (
   name: 's-icon-all-info',
-  x: 0px,
-  y: 51px,
-  offset-x: 0px,
-  offset-y: -51px,
+  x: 177px,
+  y: 63px,
+  offset-x: -177px,
+  offset-y: -63px,
   width: 16px,
   height: 11px,
-  total-width: 106px,
-  total-height: 62px,
+  total-width: 193px,
+  total-height: 138px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-icon-all-info-hover: (
   name: 's-icon-all-info_hover',
-  x: 17px,
+  x: 177px,
   y: 51px,
-  offset-x: -17px,
+  offset-x: -177px,
   offset-y: -51px,
   width: 16px,
   height: 11px,
-  total-width: 106px,
-  total-height: 62px,
+  total-width: 193px,
+  total-height: 138px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-icon-bq-left: (
   name: 's-icon-bq-left',
-  x: 47px,
-  y: 31px,
-  offset-x: -47px,
-  offset-y: -31px,
+  x: 171px,
+  y: 82px,
+  offset-x: -171px,
+  offset-y: -82px,
   width: 22px,
   height: 19px,
-  total-width: 106px,
-  total-height: 62px,
+  total-width: 193px,
+  total-height: 138px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-icon-bq-right: (
   name: 's-icon-bq-right',
-  x: 77px,
-  y: 30px,
-  offset-x: -77px,
-  offset-y: -30px,
+  x: 147px,
+  y: 82px,
+  offset-x: -147px,
+  offset-y: -82px,
   width: 23px,
   height: 19px,
-  total-width: 106px,
-  total-height: 62px,
+  total-width: 193px,
+  total-height: 138px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-icon-fb: (
   name: 's-icon-fb',
-  x: 77px,
-  y: 0px,
-  offset-x: -77px,
-  offset-y: 0px,
+  x: 0px,
+  y: 109px,
+  offset-x: 0px,
+  offset-y: -109px,
   width: 29px,
   height: 29px,
-  total-width: 106px,
-  total-height: 62px,
+  total-width: 193px,
+  total-height: 138px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-icon-vk: (
   name: 's-icon-vk',
-  x: 47px,
-  y: 0px,
-  offset-x: -47px,
-  offset-y: 0px,
+  x: 147px,
+  y: 51px,
+  offset-x: -147px,
+  offset-y: -51px,
   width: 29px,
   height: 30px,
-  total-width: 106px,
-  total-height: 62px,
+  total-width: 193px,
+  total-height: 138px,
+  image: '../img/sprite/png-sprite.png'
+);
+$s-kitchen: (
+  name: 's-kitchen',
+  x: 49px,
+  y: 0px,
+  offset-x: -49px,
+  offset-y: 0px,
+  width: 48px,
+  height: 54px,
+  total-width: 193px,
+  total-height: 138px,
   image: '../img/sprite/png-sprite.png'
 );
 $s-logo-min: (
   name: 's-logo-min',
+  x: 147px,
+  y: 0px,
+  offset-x: -147px,
+  offset-y: 0px,
+  width: 46px,
+  height: 50px,
+  total-width: 193px,
+  total-height: 138px,
+  image: '../img/sprite/png-sprite.png'
+);
+$s-negotiations: (
+  name: 's-negotiations',
+  x: 0px,
+  y: 55px,
+  offset-x: 0px,
+  offset-y: -55px,
+  width: 48px,
+  height: 53px,
+  total-width: 193px,
+  total-height: 138px,
+  image: '../img/sprite/png-sprite.png'
+);
+$s-offices: (
+  name: 's-offices',
+  x: 98px,
+  y: 0px,
+  offset-x: -98px,
+  offset-y: 0px,
+  width: 48px,
+  height: 53px,
+  total-width: 193px,
+  total-height: 138px,
+  image: '../img/sprite/png-sprite.png'
+);
+$s-recreation: (
+  name: 's-recreation',
   x: 0px,
   y: 0px,
   offset-x: 0px,
   offset-y: 0px,
-  width: 46px,
-  height: 50px,
-  total-width: 106px,
-  total-height: 62px,
+  width: 48px,
+  height: 54px,
+  total-width: 193px,
+  total-height: 138px,
   image: '../img/sprite/png-sprite.png'
 );
 $spritesheet: (
-  width: 106px,
-  height: 62px,
+  width: 193px,
+  height: 138px,
   image: '../img/sprite/png-sprite.png',
-  sprites: ($s-icon-all-info, $s-icon-all-info-hover, $s-icon-bq-left, $s-icon-bq-right, $s-icon-fb, $s-icon-vk, $s-logo-min, )
+  sprites: ($s-conference, $s-coworking, $s-icon-all-info, $s-icon-all-info-hover, $s-icon-bq-left, $s-icon-bq-right, $s-icon-fb, $s-icon-vk, $s-kitchen, $s-logo-min, $s-negotiations, $s-offices, $s-recreation, )
 );
 
 /*

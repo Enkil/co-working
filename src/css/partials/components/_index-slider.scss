@@ -78,15 +78,17 @@
   .index-slider{
     position: relative;
     height: calc(100vh - 83px);
+    min-height: 768px;
     @include mq($from:xs, $until: xl){
       height: calc(100vh - 133px);
     }
 
     .slide{
-      //max-height: 890px;
+      min-height: 768px;
       img{
         width: 100%;
         object-fit: cover;
+        min-height: 768px;
         height: calc(100vh - 83px);
         @include mq($from:xs, $until: xl){
           height: calc(100vh - 133px);

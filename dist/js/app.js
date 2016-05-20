@@ -16409,6 +16409,14 @@ $(document).ready(function() {
         autoplaySpeed: 3000
     });
 
+    // Zones slider
+    $(".zones-slider").slick({
+        dots: false,
+        fade: false,
+        autoplay: false,
+        autoplaySpeed: 3000
+    });
+
     // Style inputs
     $('select.js-select').styler();
     $('input.js-input-checkbox').styler();
