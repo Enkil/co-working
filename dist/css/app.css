@@ -3346,6 +3346,8 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 
 .sliders-wrapper {
   position: relative;
+  height: 700px;
+  max-height: 700px;
 }
 
 .sliders-menu {
@@ -3355,6 +3357,7 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
   right: 0;
   width: 330px;
   height: 100%;
+  max-height: 700px;
   background-color: rgba(20,150,213,.6);
 }
 
@@ -3468,14 +3471,32 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
   background-position: 0 0;
 }
 
-.zones-slider .slide {
-  position: relative;
+.zones-slider {
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 700px;
+  max-height: 700px;
 }
 
-.zones-slider .slide .img img {
+.zones-slider.-active {
   display: block;
-  width: 100%;
-  height: auto;
+}
+
+.zones-slider .slide {
+  position: relative;
+  height: 700px;
+  max-height: 700px;
+}
+
+.zones-slider .slide > .img {
+  height: 700px;
+}
+
+.zones-slider .slide > .img img {
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .zones-slider .slide .slide-content {
@@ -3509,9 +3530,8 @@ form.testdrive-form .img-upload .uploadbtn span:active:before,form.testdrive-for
 }
 
 .zones-slider .slide .slide-content .img img {
-  display: block;
-  width: 100%;
-  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .zones-slider .slide .slide-content .info {
