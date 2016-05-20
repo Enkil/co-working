@@ -16559,13 +16559,28 @@ $(document).ready(function() {
 
         $.get('partials/components/buy-popup.html', function(data) {
             $("header").append(data);
-            console.info('Загрузка завершена.');
-            $("html").addClass("_unscrolled")
+            $("html").addClass("_unscrolled");
+            $('.js-input-tel').inputmask({"mask": "(9) (999) 999-9999", greedy: false});
+            $(".js-buy-form").validate({
+                errorClass: "-error",
+                validClass: "-valid",
+                errorElement: "em",
+                highlight: function( element, errorClass, validClass ) {
+                    $(element).parent().addClass(errorClass).removeClass(validClass);
+                },
+                unhighlight: function( element, errorClass, validClass ) {
+                    $(element).parent().removeClass(errorClass).addClass(validClass);
+                },
+                errorPlacement: function(error,element) {
+                    return true;
+                }
+            });
         });
     });
 
     $(document).on('click', '.close', function () {
         $(this).parents('div').fadeOut();
+        $("html").removeClass("_unscrolled")
     });
 });
 },{"./vendor/bower/slick":9,"gmaps":1,"jquery":7,"jquery-validation":2,"jquery.formstyler":3,"jquery.inputmask":6}],9:[function(require,module,exports){
