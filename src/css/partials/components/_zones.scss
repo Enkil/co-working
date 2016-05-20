@@ -1,7 +1,42 @@
 .zones-section{
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 700px;
+
+  .services-block{
+    background-image: url(../img/bg/zones-bg-phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+
+     h2.title{
+       font-family: "Lato-Light";
+       text-transform: uppercase;
+       font-size: 14px;
+       color: $white;
+       text-align: center;
+       margin-bottom: 80px;
+    }
+
+    .service-item{
+      text-align: center;
+      margin-bottom: 40px;
+
+      .img{
+        width: 81px;
+        height: 91px;
+      }
+      .title{
+        font-size: 16px;
+        font-family: "Lato-Medium";
+        color: $orange;
+      }
+      .text{
+        font-size: 11px;
+        font-family: "Arial";
+        color: $white;
+      }
+    }
+  }
 }
 .sliders-wrapper{
   position: relative;
@@ -21,7 +56,6 @@
   @include mq($from:sm, $until: xl){
     display: none;
   }
-
   .list{
     list-style: none;
     padding: 0;
