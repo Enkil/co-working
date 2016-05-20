@@ -137,8 +137,9 @@ nav.header-nav{
       text-align: center;
 
       a.link{
-        padding-bottom: 20px;
-        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 10px;
         border-bottom: 1px solid $orange;
         display: block;
         &:hover{
