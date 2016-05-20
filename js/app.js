@@ -16553,7 +16553,20 @@ $(document).ready(function() {
         });
     });
 
+    // Buy popup
+    $(".price-block").find(".buy").click(function (data) {
+        var _this = $(this);
 
+        $.get('partials/components/buy-popup.html', function(data) {
+            $("header").append(data);
+            console.info('Загрузка завершена.');
+            $("html").addClass("_unscrolled")
+        });
+    });
+
+    $(document).on('click', '.close', function () {
+        $(this).parents('div').fadeOut();
+    });
 });
 },{"./vendor/bower/slick":9,"gmaps":1,"jquery":7,"jquery-validation":2,"jquery.formstyler":3,"jquery.inputmask":6}],9:[function(require,module,exports){
 /*
