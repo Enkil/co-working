@@ -78,20 +78,20 @@ $(document).ready(function() {
     $('input.js-input-checkbox').styler();
 
     // Map
-    // var map = new gmaps({
-    //     el: '#index-map',
-    //     lat: -12.043333,
-    //     lng: -77.028333,
-    //     scrollwheel: false
-    // });
-    // map.addMarker({
-    //     lat: -12.043333,
-    //     lng: -77.028333,
-    //     title: 'Lima',
-    //     infoWindow: {
-    //         content: '<p>HTML Content</p>'
-    //     }
-    // });
+    var map = new gmaps({
+        el: '#index-map',
+        lat: -12.043333,
+        lng: -77.028333,
+        scrollwheel: false
+    });
+    map.addMarker({
+        lat: -12.043333,
+        lng: -77.028333,
+        title: 'Lima',
+        infoWindow: {
+            content: '<p>HTML Content</p>'
+        }
+    });
 
     // Partners slider
     $("#partner-slider").slick({
