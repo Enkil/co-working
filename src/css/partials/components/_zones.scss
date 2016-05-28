@@ -84,23 +84,29 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    &:before{
-      content: "";
+
+    > .img{
+      width: 50px;
+      height: 50px;
       display: inline-block;
-      position: absolute;
-      left: 40px;
-      top: calc(50% - 26px);
+      margin-right: 40px;
     }
+
+    svg{
+      height: 100%;
+      width: 100%;
+      fill: $white
+    }
+
+    > span{
+      display: inline-block;
+      width: 140px;
+    }
+
     &:hover{  background-color: $blue;  }
     &:active{  background-color: $darkblue;  }
 
     &.-active{  background-color: $orange;  }
-    &.-coworking:before{  @include sprite($s-coworking)  }
-    &.-offices:before{  @include sprite($s-offices)  }
-    &.-conference:before{  @include sprite($s-conference)  }
-    &.-negotiations:before{  @include sprite($s-negotiations)  }
-    &.-kitchen:before{  @include sprite($s-kitchen)  }
-    &.-recreation:before{  @include sprite($s-recreation)  }
   }
 }
 
@@ -194,12 +200,13 @@
       display: flex;
 
       .left{
-        width: 30%;
+        width: 20%;
         margin-right: 50px;
         align-self: center;
+        min-width: 115px;
       }
       .right{
-        width: 70%;
+        width: 80%;
       }
 
       .img{
